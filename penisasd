@@ -1,0 +1,1570 @@
+local PrisonKiller = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Label = Instance.new("TextLabel")
+local OpenLocal = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local OpenRage = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local OpenHelp = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local LocalFrame = Instance.new("ScrollingFrame")
+local GetGunHandler = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local GetGun = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local GetGunLabel = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local ReHandler = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local RePlayer = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ReLabel = Instance.new("TextLabel")
+local RespawnHandler = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local RespawnPlayer = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local RespawnLabel = Instance.new("TextLabel")
+local GodModeHandler = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local GodMode = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local GodModeLabel = Instance.new("TextLabel")
+local TeamHandler = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local TeamInmate = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local TeamLabel = Instance.new("TextLabel")
+local TeamGuard = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local TeamCriminal = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TeamNeutral = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local InvisibleHandler = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local InvisibleLabel = Instance.new("TextLabel")
+local Invisible = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local SpeedHandler = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local SetSpeed = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local SpeedLabel = Instance.new("TextLabel")
+local SpeedText = Instance.new("TextBox")
+local UICorner_22 = Instance.new("UICorner")
+local JumpPowerHandler = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local SetJumpPower = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local JumpPowerLabel = Instance.new("TextLabel")
+local JumpPowerText = Instance.new("TextBox")
+local UICorner_25 = Instance.new("UICorner")
+local RageFrame = Instance.new("ScrollingFrame")
+local KillTeamHandler = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local KillNeutral = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local KillTeamLabel = Instance.new("TextLabel")
+local KillCriminal = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local KillGuard = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local KillInmate = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local KillPlayerHandler = Instance.new("Frame")
+local UICorner_31 = Instance.new("UICorner")
+local KillPlayer = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local KillPlayerLabel = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextBox")
+local UICorner_33 = Instance.new("UICorner")
+local LoopKillTeamHandler = Instance.new("Frame")
+local UICorner_34 = Instance.new("UICorner")
+local LoopKillNeutral = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local LoopKillTeamLabel = Instance.new("TextLabel")
+local LoopKillCriminal = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local LoopKillGuard = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local LoopKillInmate = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local LoopKillPlayerHandler = Instance.new("Frame")
+local UICorner_39 = Instance.new("UICorner")
+local LoopKillPlayer = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local LoopKillPlayerLabel = Instance.new("TextLabel")
+local PlayerName2 = Instance.new("TextBox")
+local UICorner_41 = Instance.new("UICorner")
+local KillAuraTeamHandler = Instance.new("Frame")
+local UICorner_42 = Instance.new("UICorner")
+local KillAuraNeutral = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local KillAuraLabel = Instance.new("TextLabel")
+local KillAuraCriminal = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local KillAuraGuard = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local KillAuraInmate = Instance.new("TextButton")
+local UICorner_46 = Instance.new("UICorner")
+local KillAuraHandler = Instance.new("Frame")
+local UICorner_47 = Instance.new("UICorner")
+local KillAura = Instance.new("TextButton")
+local UICorner_48 = Instance.new("UICorner")
+local KillAuraLabel_2 = Instance.new("TextLabel")
+local HelpFrame = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local OpenCloseKeyHandler = Instance.new("Frame")
+local UICorner_49 = Instance.new("UICorner")
+local OpenCloseKeyLabel = Instance.new("TextLabel")
+local OpenCloseKey = Instance.new("TextLabel")
+local UICorner_50 = Instance.new("UICorner")
+local DestroyKeyHandler = Instance.new("Frame")
+local UICorner_51 = Instance.new("UICorner")
+local DestroyLabel = Instance.new("TextLabel")
+local KeyCode2 = Instance.new("TextLabel")
+local UICorner_52 = Instance.new("UICorner")
+local VersionHandler = Instance.new("Frame")
+local UICorner_53 = Instance.new("UICorner")
+local VersionLabel = Instance.new("TextLabel")
+local VersionText = Instance.new("TextLabel")
+local UICorner_54 = Instance.new("UICorner")
+local UpdateGuiHandler = Instance.new("Frame")
+local UICorner_55 = Instance.new("UICorner")
+local UpdateGuiLabel = Instance.new("TextLabel")
+local UpdateButton = Instance.new("TextButton")
+local UICorner_56 = Instance.new("UICorner")
+
+PrisonKiller.Name = "Prison Killer"
+PrisonKiller.Parent = game:GetService("CoreGui")
+PrisonKiller.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Background.Name = "Background"
+Background.Parent = PrisonKiller
+Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0.256085694, 0, 0.0818030238, 0)
+Background.Size = UDim2.new(0, 500, 0, 500)
+Background.Active = true
+Background.Draggable = true
+
+UICorner.Parent = Background
+
+Label.Name = "Label"
+Label.Parent = Background
+Label.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Label.BackgroundTransparency = 1.000
+Label.BorderSizePixel = 0
+Label.Position = UDim2.new(0.0120000001, 0, 0, 0)
+Label.Size = UDim2.new(0, 130, 0, 25)
+Label.Font = Enum.Font.GothamBlack
+Label.Text = "VENUS ON TOP"
+Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label.TextScaled = true
+Label.TextSize = 14.000
+Label.TextWrapped = true
+
+OpenLocal.Name = "OpenLocal"
+OpenLocal.Parent = Background
+OpenLocal.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OpenLocal.BorderSizePixel = 0
+OpenLocal.Position = UDim2.new(0.0419999994, 0, 0.109999999, 0)
+OpenLocal.Size = UDim2.new(0, 100, 0, 30)
+OpenLocal.Font = Enum.Font.GothamBlack
+OpenLocal.Text = "Local"
+OpenLocal.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenLocal.TextScaled = true
+OpenLocal.TextSize = 14.000
+OpenLocal.TextWrapped = true
+
+UICorner_2.Parent = OpenLocal
+
+OpenRage.Name = "OpenRage"
+OpenRage.Parent = Background
+OpenRage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+OpenRage.BorderSizePixel = 0
+OpenRage.Position = UDim2.new(0.0419999994, 0, 0.211999997, 0)
+OpenRage.Size = UDim2.new(0, 100, 0, 30)
+OpenRage.Font = Enum.Font.GothamBlack
+OpenRage.Text = "Rage"
+OpenRage.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenRage.TextScaled = true
+OpenRage.TextSize = 14.000
+OpenRage.TextWrapped = true
+
+UICorner_3.Parent = OpenRage
+
+OpenHelp.Name = "OpenHelp"
+OpenHelp.Parent = Background
+OpenHelp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+OpenHelp.BorderSizePixel = 0
+OpenHelp.Position = UDim2.new(0.0419999994, 0, 0.312000006, 0)
+OpenHelp.Size = UDim2.new(0, 100, 0, 30)
+OpenHelp.Font = Enum.Font.GothamBlack
+OpenHelp.Text = "Help"
+OpenHelp.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenHelp.TextScaled = true
+OpenHelp.TextSize = 14.000
+OpenHelp.TextWrapped = true
+
+UICorner_4.Parent = OpenHelp
+
+LocalFrame.Name = "LocalFrame"
+LocalFrame.Parent = Background
+LocalFrame.Active = true
+LocalFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LocalFrame.BackgroundTransparency = 1.000
+LocalFrame.BorderSizePixel = 0
+LocalFrame.Position = UDim2.new(0.254000008, 0, 0.109999999, 0)
+LocalFrame.Size = UDim2.new(0, 350, 0, 400)
+LocalFrame.CanvasPosition = Vector2.new(0, 150)
+LocalFrame.ScrollBarThickness = 2
+
+GetGunHandler.Name = "GetGunHandler"
+GetGunHandler.Parent = LocalFrame
+GetGunHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GetGunHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_5.Parent = GetGunHandler
+
+GetGun.Name = "GetGun"
+GetGun.Parent = GetGunHandler
+GetGun.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+GetGun.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+GetGun.Size = UDim2.new(0, 30, 0, 30)
+GetGun.Font = Enum.Font.SourceSans
+GetGun.Text = ""
+GetGun.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetGun.TextSize = 14.000
+
+UICorner_6.Parent = GetGun
+
+GetGunLabel.Name = "GetGunLabel"
+GetGunLabel.Parent = GetGunHandler
+GetGunLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetGunLabel.BackgroundTransparency = 1.000
+GetGunLabel.BorderSizePixel = 0
+GetGunLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+GetGunLabel.Size = UDim2.new(0, 200, 0, 30)
+GetGunLabel.Font = Enum.Font.GothamBlack
+GetGunLabel.Text = "Get All Guns"
+GetGunLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetGunLabel.TextSize = 18.000
+
+UIListLayout.Parent = LocalFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 4)
+
+ReHandler.Name = "ReHandler"
+ReHandler.Parent = LocalFrame
+ReHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ReHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_7.Parent = ReHandler
+
+RePlayer.Name = "RePlayer"
+RePlayer.Parent = ReHandler
+RePlayer.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+RePlayer.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+RePlayer.Size = UDim2.new(0, 30, 0, 30)
+RePlayer.Font = Enum.Font.SourceSans
+RePlayer.Text = ""
+RePlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+RePlayer.TextSize = 14.000
+
+UICorner_8.Parent = RePlayer
+
+ReLabel.Name = "ReLabel"
+ReLabel.Parent = ReHandler
+ReLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReLabel.BackgroundTransparency = 1.000
+ReLabel.BorderSizePixel = 0
+ReLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+ReLabel.Size = UDim2.new(0, 200, 0, 30)
+ReLabel.Font = Enum.Font.GothamBlack
+ReLabel.Text = "Re"
+ReLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReLabel.TextSize = 18.000
+
+RespawnHandler.Name = "RespawnHandler"
+RespawnHandler.Parent = LocalFrame
+RespawnHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+RespawnHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_9.Parent = RespawnHandler
+
+RespawnPlayer.Name = "RespawnPlayer"
+RespawnPlayer.Parent = RespawnHandler
+RespawnPlayer.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+RespawnPlayer.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+RespawnPlayer.Size = UDim2.new(0, 30, 0, 30)
+RespawnPlayer.Font = Enum.Font.SourceSans
+RespawnPlayer.Text = ""
+RespawnPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+RespawnPlayer.TextSize = 14.000
+
+UICorner_10.Parent = RespawnPlayer
+
+RespawnLabel.Name = "RespawnLabel"
+RespawnLabel.Parent = RespawnHandler
+RespawnLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RespawnLabel.BackgroundTransparency = 1.000
+RespawnLabel.BorderSizePixel = 0
+RespawnLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+RespawnLabel.Size = UDim2.new(0, 200, 0, 30)
+RespawnLabel.Font = Enum.Font.GothamBlack
+RespawnLabel.Text = "Respawn"
+RespawnLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+RespawnLabel.TextSize = 18.000
+
+GodModeHandler.Name = "GodModeHandler"
+GodModeHandler.Parent = LocalFrame
+GodModeHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GodModeHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_11.Parent = GodModeHandler
+
+GodMode.Name = "GodMode"
+GodMode.Parent = GodModeHandler
+GodMode.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+GodMode.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+GodMode.Size = UDim2.new(0, 30, 0, 30)
+GodMode.Font = Enum.Font.SourceSans
+GodMode.Text = ""
+GodMode.TextColor3 = Color3.fromRGB(0, 0, 0)
+GodMode.TextSize = 14.000
+
+UICorner_12.Parent = GodMode
+
+GodModeLabel.Name = "GodModeLabel"
+GodModeLabel.Parent = GodModeHandler
+GodModeLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GodModeLabel.BackgroundTransparency = 1.000
+GodModeLabel.BorderSizePixel = 0
+GodModeLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+GodModeLabel.Size = UDim2.new(0, 200, 0, 30)
+GodModeLabel.Font = Enum.Font.GothamBlack
+GodModeLabel.Text = "God Mode"
+GodModeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodModeLabel.TextSize = 18.000
+
+TeamHandler.Name = "TeamHandler"
+TeamHandler.Parent = LocalFrame
+TeamHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TeamHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_13.Parent = TeamHandler
+
+TeamInmate.Name = "TeamInmate"
+TeamInmate.Parent = TeamHandler
+TeamInmate.BackgroundColor3 = Color3.fromRGB(255, 75, 0)
+TeamInmate.Position = UDim2.new(0.614285707, 0, 0.200000048, 0)
+TeamInmate.Size = UDim2.new(0, 30, 0, 30)
+TeamInmate.Font = Enum.Font.SourceSans
+TeamInmate.Text = ""
+TeamInmate.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeamInmate.TextSize = 14.000
+
+UICorner_14.Parent = TeamInmate
+
+TeamLabel.Name = "TeamLabel"
+TeamLabel.Parent = TeamHandler
+TeamLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeamLabel.BackgroundTransparency = 1.000
+TeamLabel.BorderSizePixel = 0
+TeamLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+TeamLabel.Size = UDim2.new(0, 200, 0, 30)
+TeamLabel.Font = Enum.Font.GothamBlack
+TeamLabel.Text = "Team"
+TeamLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeamLabel.TextSize = 18.000
+
+TeamGuard.Name = "TeamGuard"
+TeamGuard.Parent = TeamHandler
+TeamGuard.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+TeamGuard.Position = UDim2.new(0.699999988, 0, 0.200000048, 0)
+TeamGuard.Size = UDim2.new(0, 30, 0, 30)
+TeamGuard.Font = Enum.Font.SourceSans
+TeamGuard.Text = ""
+TeamGuard.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeamGuard.TextSize = 14.000
+
+UICorner_15.Parent = TeamGuard
+
+TeamCriminal.Name = "TeamCriminal"
+TeamCriminal.Parent = TeamHandler
+TeamCriminal.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TeamCriminal.Position = UDim2.new(0.785714269, 0, 0.199999988, 0)
+TeamCriminal.Size = UDim2.new(0, 30, 0, 30)
+TeamCriminal.Font = Enum.Font.SourceSans
+TeamCriminal.Text = ""
+TeamCriminal.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeamCriminal.TextSize = 14.000
+
+UICorner_16.Parent = TeamCriminal
+
+TeamNeutral.Name = "TeamNeutral"
+TeamNeutral.Parent = TeamHandler
+TeamNeutral.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+TeamNeutral.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+TeamNeutral.Size = UDim2.new(0, 30, 0, 30)
+TeamNeutral.Font = Enum.Font.SourceSans
+TeamNeutral.Text = ""
+TeamNeutral.TextColor3 = Color3.fromRGB(0, 0, 0)
+TeamNeutral.TextSize = 14.000
+
+UICorner_17.Parent = TeamNeutral
+
+InvisibleHandler.Name = "InvisibleHandler"
+InvisibleHandler.Parent = LocalFrame
+InvisibleHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+InvisibleHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_18.Parent = InvisibleHandler
+
+InvisibleLabel.Name = "InvisibleLabel"
+InvisibleLabel.Parent = InvisibleHandler
+InvisibleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InvisibleLabel.BackgroundTransparency = 1.000
+InvisibleLabel.BorderSizePixel = 0
+InvisibleLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+InvisibleLabel.Size = UDim2.new(0, 200, 0, 30)
+InvisibleLabel.Font = Enum.Font.GothamBlack
+InvisibleLabel.Text = "Invisible"
+InvisibleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+InvisibleLabel.TextSize = 18.000
+
+Invisible.Name = "Invisible"
+Invisible.Parent = InvisibleHandler
+Invisible.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+Invisible.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+Invisible.Size = UDim2.new(0, 30, 0, 30)
+Invisible.Font = Enum.Font.SourceSans
+Invisible.Text = ""
+Invisible.TextColor3 = Color3.fromRGB(0, 0, 0)
+Invisible.TextSize = 14.000
+
+UICorner_19.Parent = Invisible
+
+SpeedHandler.Name = "SpeedHandler"
+SpeedHandler.Parent = LocalFrame
+SpeedHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SpeedHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_20.Parent = SpeedHandler
+
+SetSpeed.Name = "SetSpeed"
+SetSpeed.Parent = SpeedHandler
+SetSpeed.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+SetSpeed.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+SetSpeed.Size = UDim2.new(0, 30, 0, 30)
+SetSpeed.Font = Enum.Font.SourceSans
+SetSpeed.Text = ""
+SetSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+SetSpeed.TextSize = 14.000
+
+UICorner_21.Parent = SetSpeed
+
+SpeedLabel.Name = "SpeedLabel"
+SpeedLabel.Parent = SpeedHandler
+SpeedLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedLabel.BackgroundTransparency = 1.000
+SpeedLabel.BorderSizePixel = 0
+SpeedLabel.Position = UDim2.new(0.0628571436, 0, 0.200000003, 0)
+SpeedLabel.Size = UDim2.new(0, 120, 0, 30)
+SpeedLabel.Font = Enum.Font.GothamBlack
+SpeedLabel.Text = "Speed"
+SpeedLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedLabel.TextSize = 18.000
+
+SpeedText.Name = "SpeedText"
+SpeedText.Parent = SpeedHandler
+SpeedText.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+SpeedText.BorderSizePixel = 0
+SpeedText.Position = UDim2.new(0.514285743, 0, 0.200000003, 0)
+SpeedText.Size = UDim2.new(0, 100, 0, 30)
+SpeedText.Font = Enum.Font.GothamBlack
+SpeedText.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SpeedText.PlaceholderText = "Speed"
+SpeedText.Text = ""
+SpeedText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedText.TextSize = 14.000
+SpeedText.TextWrapped = true
+SpeedText.ClearTextOnFocus = false
+
+UICorner_22.Parent = SpeedText
+
+JumpPowerHandler.Name = "JumpPowerHandler"
+JumpPowerHandler.Parent = LocalFrame
+JumpPowerHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+JumpPowerHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_23.Parent = JumpPowerHandler
+
+SetJumpPower.Name = "SetJumpPower"
+SetJumpPower.Parent = JumpPowerHandler
+SetJumpPower.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+SetJumpPower.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+SetJumpPower.Size = UDim2.new(0, 30, 0, 30)
+SetJumpPower.Font = Enum.Font.SourceSans
+SetJumpPower.Text = ""
+SetJumpPower.TextColor3 = Color3.fromRGB(0, 0, 0)
+SetJumpPower.TextSize = 14.000
+
+UICorner_24.Parent = SetJumpPower
+
+JumpPowerLabel.Name = "JumpPowerLabel"
+JumpPowerLabel.Parent = JumpPowerHandler
+JumpPowerLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerLabel.BackgroundTransparency = 1.000
+JumpPowerLabel.BorderSizePixel = 0
+JumpPowerLabel.Position = UDim2.new(0.0628571436, 0, 0.200000003, 0)
+JumpPowerLabel.Size = UDim2.new(0, 120, 0, 30)
+JumpPowerLabel.Font = Enum.Font.GothamBlack
+JumpPowerLabel.Text = "Jump Power"
+JumpPowerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerLabel.TextSize = 18.000
+
+JumpPowerText.Name = "JumpPowerText"
+JumpPowerText.Parent = JumpPowerHandler
+JumpPowerText.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+JumpPowerText.BorderSizePixel = 0
+JumpPowerText.Position = UDim2.new(0.514285743, 0, 0.200000003, 0)
+JumpPowerText.Size = UDim2.new(0, 100, 0, 30)
+JumpPowerText.Font = Enum.Font.GothamBlack
+JumpPowerText.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerText.PlaceholderText = "Jump Power"
+JumpPowerText.Text = ""
+JumpPowerText.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerText.TextSize = 14.000
+JumpPowerText.TextWrapped = true
+JumpPowerText.ClearTextOnFocus = false
+
+UICorner_25.Parent = JumpPowerText
+
+RageFrame.Name = "RageFrame"
+RageFrame.Parent = Background
+RageFrame.Active = true
+RageFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+RageFrame.BackgroundTransparency = 1.000
+RageFrame.BorderSizePixel = 0
+RageFrame.Position = UDim2.new(0.254000008, 0, 0.109999999, 0)
+RageFrame.Size = UDim2.new(0, 350, 0, 400)
+RageFrame.Visible = false
+RageFrame.ScrollBarThickness = 2
+
+KillTeamHandler.Name = "KillTeamHandler"
+KillTeamHandler.Parent = RageFrame
+KillTeamHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KillTeamHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_26.Parent = KillTeamHandler
+
+KillNeutral.Name = "KillNeutral"
+KillNeutral.Parent = KillTeamHandler
+KillNeutral.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+KillNeutral.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+KillNeutral.Size = UDim2.new(0, 30, 0, 30)
+KillNeutral.Font = Enum.Font.SourceSans
+KillNeutral.Text = ""
+KillNeutral.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillNeutral.TextSize = 14.000
+
+UICorner_27.Parent = KillNeutral
+
+KillTeamLabel.Name = "KillTeamLabel"
+KillTeamLabel.Parent = KillTeamHandler
+KillTeamLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillTeamLabel.BackgroundTransparency = 1.000
+KillTeamLabel.BorderSizePixel = 0
+KillTeamLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+KillTeamLabel.Size = UDim2.new(0, 200, 0, 30)
+KillTeamLabel.Font = Enum.Font.GothamBlack
+KillTeamLabel.Text = "Kill Team"
+KillTeamLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillTeamLabel.TextSize = 18.000
+
+KillCriminal.Name = "KillCriminal"
+KillCriminal.Parent = KillTeamHandler
+KillCriminal.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+KillCriminal.Position = UDim2.new(0.785714269, 0, 0.200000003, 0)
+KillCriminal.Size = UDim2.new(0, 30, 0, 30)
+KillCriminal.Font = Enum.Font.SourceSans
+KillCriminal.Text = ""
+KillCriminal.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillCriminal.TextSize = 14.000
+
+UICorner_28.Parent = KillCriminal
+
+KillGuard.Name = "KillGuard"
+KillGuard.Parent = KillTeamHandler
+KillGuard.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+KillGuard.Position = UDim2.new(0.699999988, 0, 0.200000003, 0)
+KillGuard.Size = UDim2.new(0, 30, 0, 30)
+KillGuard.Font = Enum.Font.SourceSans
+KillGuard.Text = ""
+KillGuard.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillGuard.TextSize = 14.000
+
+UICorner_29.Parent = KillGuard
+
+KillInmate.Name = "KillInmate"
+KillInmate.Parent = KillTeamHandler
+KillInmate.BackgroundColor3 = Color3.fromRGB(255, 75, 0)
+KillInmate.Position = UDim2.new(0.614285707, 0, 0.200000003, 0)
+KillInmate.Size = UDim2.new(0, 30, 0, 30)
+KillInmate.Font = Enum.Font.SourceSans
+KillInmate.Text = ""
+KillInmate.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillInmate.TextSize = 14.000
+
+UICorner_30.Parent = KillInmate
+
+UIListLayout_2.Parent = RageFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 4)
+
+KillPlayerHandler.Name = "KillPlayerHandler"
+KillPlayerHandler.Parent = RageFrame
+KillPlayerHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KillPlayerHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_31.Parent = KillPlayerHandler
+
+KillPlayer.Name = "KillPlayer"
+KillPlayer.Parent = KillPlayerHandler
+KillPlayer.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+KillPlayer.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+KillPlayer.Size = UDim2.new(0, 30, 0, 30)
+KillPlayer.Font = Enum.Font.SourceSans
+KillPlayer.Text = ""
+KillPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillPlayer.TextSize = 14.000
+
+UICorner_32.Parent = KillPlayer
+
+KillPlayerLabel.Name = "KillPlayerLabel"
+KillPlayerLabel.Parent = KillPlayerHandler
+KillPlayerLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillPlayerLabel.BackgroundTransparency = 1.000
+KillPlayerLabel.BorderSizePixel = 0
+KillPlayerLabel.Position = UDim2.new(0.0628571436, 0, 0.200000003, 0)
+KillPlayerLabel.Size = UDim2.new(0, 120, 0, 30)
+KillPlayerLabel.Font = Enum.Font.GothamBlack
+KillPlayerLabel.Text = "Kill"
+KillPlayerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillPlayerLabel.TextSize = 18.000
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = KillPlayerHandler
+PlayerName.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.514285743, 0, 0.200000003, 0)
+PlayerName.Size = UDim2.new(0, 100, 0, 30)
+PlayerName.Font = Enum.Font.GothamBlack
+PlayerName.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.PlaceholderText = "Player"
+PlayerName.Text = ""
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+UICorner_33.Parent = PlayerName
+
+LoopKillTeamHandler.Name = "LoopKillTeamHandler"
+LoopKillTeamHandler.Parent = RageFrame
+LoopKillTeamHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LoopKillTeamHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_34.Parent = LoopKillTeamHandler
+
+LoopKillNeutral.Name = "LoopKillNeutral"
+LoopKillNeutral.Parent = LoopKillTeamHandler
+LoopKillNeutral.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+LoopKillNeutral.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+LoopKillNeutral.Size = UDim2.new(0, 30, 0, 30)
+LoopKillNeutral.Font = Enum.Font.SourceSans
+LoopKillNeutral.Text = "X"
+LoopKillNeutral.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoopKillNeutral.TextSize = 14.000
+
+UICorner_35.Parent = LoopKillNeutral
+
+LoopKillTeamLabel.Name = "LoopKillTeamLabel"
+LoopKillTeamLabel.Parent = LoopKillTeamHandler
+LoopKillTeamLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoopKillTeamLabel.BackgroundTransparency = 1.000
+LoopKillTeamLabel.BorderSizePixel = 0
+LoopKillTeamLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+LoopKillTeamLabel.Size = UDim2.new(0, 200, 0, 30)
+LoopKillTeamLabel.Font = Enum.Font.GothamBlack
+LoopKillTeamLabel.Text = "Loop Kills Team"
+LoopKillTeamLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopKillTeamLabel.TextSize = 18.000
+
+LoopKillCriminal.Name = "LoopKillCriminal"
+LoopKillCriminal.Parent = LoopKillTeamHandler
+LoopKillCriminal.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+LoopKillCriminal.Position = UDim2.new(0.785714269, 0, 0.200000003, 0)
+LoopKillCriminal.Size = UDim2.new(0, 30, 0, 30)
+LoopKillCriminal.Font = Enum.Font.SourceSans
+LoopKillCriminal.Text = "X"
+LoopKillCriminal.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoopKillCriminal.TextSize = 14.000
+
+UICorner_36.Parent = LoopKillCriminal
+
+LoopKillGuard.Name = "LoopKillGuard"
+LoopKillGuard.Parent = LoopKillTeamHandler
+LoopKillGuard.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+LoopKillGuard.Position = UDim2.new(0.699999988, 0, 0.200000003, 0)
+LoopKillGuard.Size = UDim2.new(0, 30, 0, 30)
+LoopKillGuard.Font = Enum.Font.SourceSans
+LoopKillGuard.Text = "X"
+LoopKillGuard.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoopKillGuard.TextSize = 14.000
+
+UICorner_37.Parent = LoopKillGuard
+
+LoopKillInmate.Name = "LoopKillInmate"
+LoopKillInmate.Parent = LoopKillTeamHandler
+LoopKillInmate.BackgroundColor3 = Color3.fromRGB(255, 75, 0)
+LoopKillInmate.Position = UDim2.new(0.614285707, 0, 0.200000003, 0)
+LoopKillInmate.Size = UDim2.new(0, 30, 0, 30)
+LoopKillInmate.Font = Enum.Font.SourceSans
+LoopKillInmate.Text = "X"
+LoopKillInmate.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoopKillInmate.TextSize = 14.000
+
+UICorner_38.Parent = LoopKillInmate
+
+LoopKillPlayerHandler.Name = "LoopKillPlayerHandler"
+LoopKillPlayerHandler.Parent = RageFrame
+LoopKillPlayerHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+LoopKillPlayerHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_39.Parent = LoopKillPlayerHandler
+
+LoopKillPlayer.Name = "LoopKillPlayer"
+LoopKillPlayer.Parent = LoopKillPlayerHandler
+LoopKillPlayer.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+LoopKillPlayer.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+LoopKillPlayer.Size = UDim2.new(0, 30, 0, 30)
+LoopKillPlayer.Font = Enum.Font.SourceSans
+LoopKillPlayer.Text = ""
+LoopKillPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoopKillPlayer.TextSize = 14.000
+
+UICorner_40.Parent = LoopKillPlayer
+
+LoopKillPlayerLabel.Name = "LoopKillPlayerLabel"
+LoopKillPlayerLabel.Parent = LoopKillPlayerHandler
+LoopKillPlayerLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoopKillPlayerLabel.BackgroundTransparency = 1.000
+LoopKillPlayerLabel.BorderSizePixel = 0
+LoopKillPlayerLabel.Position = UDim2.new(0.0628571436, 0, 0.200000003, 0)
+LoopKillPlayerLabel.Size = UDim2.new(0, 120, 0, 30)
+LoopKillPlayerLabel.Font = Enum.Font.GothamBlack
+LoopKillPlayerLabel.Text = "Loop Kills"
+LoopKillPlayerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopKillPlayerLabel.TextSize = 18.000
+
+PlayerName2.Name = "PlayerName2"
+PlayerName2.Parent = LoopKillPlayerHandler
+PlayerName2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+PlayerName2.BorderSizePixel = 0
+PlayerName2.Position = UDim2.new(0.514285743, 0, 0.200000003, 0)
+PlayerName2.Size = UDim2.new(0, 100, 0, 30)
+PlayerName2.Font = Enum.Font.GothamBlack
+PlayerName2.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName2.PlaceholderText = "Player"
+PlayerName2.Text = ""
+PlayerName2.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName2.TextSize = 14.000
+PlayerName2.TextWrapped = true
+
+UICorner_41.Parent = PlayerName2
+
+KillAuraTeamHandler.Name = "KillAuraTeamHandler"
+KillAuraTeamHandler.Parent = RageFrame
+KillAuraTeamHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KillAuraTeamHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_42.Parent = KillAuraTeamHandler
+
+KillAuraNeutral.Name = "KillAuraNeutral"
+KillAuraNeutral.Parent = KillAuraTeamHandler
+KillAuraNeutral.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+KillAuraNeutral.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+KillAuraNeutral.Size = UDim2.new(0, 30, 0, 30)
+KillAuraNeutral.Font = Enum.Font.SourceSans
+KillAuraNeutral.Text = "X"
+KillAuraNeutral.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAuraNeutral.TextSize = 14.000
+
+UICorner_43.Parent = KillAuraNeutral
+
+KillAuraLabel.Name = "KillAuraLabel"
+KillAuraLabel.Parent = KillAuraTeamHandler
+KillAuraLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillAuraLabel.BackgroundTransparency = 1.000
+KillAuraLabel.BorderSizePixel = 0
+KillAuraLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+KillAuraLabel.Size = UDim2.new(0, 200, 0, 30)
+KillAuraLabel.Font = Enum.Font.GothamBlack
+KillAuraLabel.Text = "Kill Aura Team"
+KillAuraLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAuraLabel.TextSize = 18.000
+
+KillAuraCriminal.Name = "KillAuraCriminal"
+KillAuraCriminal.Parent = KillAuraTeamHandler
+KillAuraCriminal.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+KillAuraCriminal.Position = UDim2.new(0.785714269, 0, 0.200000003, 0)
+KillAuraCriminal.Size = UDim2.new(0, 30, 0, 30)
+KillAuraCriminal.Font = Enum.Font.SourceSans
+KillAuraCriminal.Text = "X"
+KillAuraCriminal.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAuraCriminal.TextSize = 14.000
+
+UICorner_44.Parent = KillAuraCriminal
+
+KillAuraGuard.Name = "KillAuraGuard"
+KillAuraGuard.Parent = KillAuraTeamHandler
+KillAuraGuard.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+KillAuraGuard.Position = UDim2.new(0.699999988, 0, 0.200000003, 0)
+KillAuraGuard.Size = UDim2.new(0, 30, 0, 30)
+KillAuraGuard.Font = Enum.Font.SourceSans
+KillAuraGuard.Text = "X"
+KillAuraGuard.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAuraGuard.TextSize = 14.000
+
+UICorner_45.Parent = KillAuraGuard
+
+KillAuraInmate.Name = "KillAuraInmate"
+KillAuraInmate.Parent = KillAuraTeamHandler
+KillAuraInmate.BackgroundColor3 = Color3.fromRGB(255, 75, 0)
+KillAuraInmate.Position = UDim2.new(0.614285707, 0, 0.200000003, 0)
+KillAuraInmate.Size = UDim2.new(0, 30, 0, 30)
+KillAuraInmate.Font = Enum.Font.SourceSans
+KillAuraInmate.Text = "X"
+KillAuraInmate.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAuraInmate.TextSize = 14.000
+
+UICorner_46.Parent = KillAuraInmate
+
+KillAuraHandler.Name = "KillAuraHandler"
+KillAuraHandler.Parent = RageFrame
+KillAuraHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KillAuraHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_47.Parent = KillAuraHandler
+
+KillAura.Name = "KillAura"
+KillAura.Parent = KillAuraHandler
+KillAura.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+KillAura.Position = UDim2.new(0.871428549, 0, 0.200000003, 0)
+KillAura.Size = UDim2.new(0, 30, 0, 30)
+KillAura.Font = Enum.Font.SourceSans
+KillAura.Text = ""
+KillAura.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAura.TextSize = 14.000
+
+UICorner_48.Parent = KillAura
+
+KillAuraLabel_2.Name = "KillAuraLabel"
+KillAuraLabel_2.Parent = KillAuraHandler
+KillAuraLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillAuraLabel_2.BackgroundTransparency = 1.000
+KillAuraLabel_2.BorderSizePixel = 0
+KillAuraLabel_2.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+KillAuraLabel_2.Size = UDim2.new(0, 200, 0, 30)
+KillAuraLabel_2.Font = Enum.Font.GothamBlack
+KillAuraLabel_2.Text = "Kill Aura"
+KillAuraLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAuraLabel_2.TextSize = 18.000
+
+HelpFrame.Name = "HelpFrame"
+HelpFrame.Parent = Background
+HelpFrame.Active = true
+HelpFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+HelpFrame.BackgroundTransparency = 1.000
+HelpFrame.BorderSizePixel = 0
+HelpFrame.Position = UDim2.new(0.254000008, 0, 0.109999999, 0)
+HelpFrame.Size = UDim2.new(0, 350, 0, 400)
+HelpFrame.Visible = false
+HelpFrame.ScrollBarThickness = 2
+
+UIListLayout_3.Parent = HelpFrame
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 4)
+
+OpenCloseKeyHandler.Name = "OpenCloseKeyHandler"
+OpenCloseKeyHandler.Parent = HelpFrame
+OpenCloseKeyHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OpenCloseKeyHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_49.Parent = OpenCloseKeyHandler
+
+OpenCloseKeyLabel.Name = "OpenCloseKeyLabel"
+OpenCloseKeyLabel.Parent = OpenCloseKeyHandler
+OpenCloseKeyLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenCloseKeyLabel.BackgroundTransparency = 1.000
+OpenCloseKeyLabel.BorderSizePixel = 0
+OpenCloseKeyLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+OpenCloseKeyLabel.Size = UDim2.new(0, 200, 0, 30)
+OpenCloseKeyLabel.Font = Enum.Font.GothamBlack
+OpenCloseKeyLabel.Text = "Open/Close Key"
+OpenCloseKeyLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenCloseKeyLabel.TextSize = 18.000
+
+OpenCloseKey.Name = "OpenCloseKey"
+OpenCloseKey.Parent = OpenCloseKeyHandler
+OpenCloseKey.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+OpenCloseKey.BorderSizePixel = 0
+OpenCloseKey.Position = UDim2.new(0.868571401, 0, 0.199999988, 0)
+OpenCloseKey.Size = UDim2.new(0, 30, 0, 30)
+OpenCloseKey.Font = Enum.Font.GothamBlack
+OpenCloseKey.Text = "Q"
+OpenCloseKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenCloseKey.TextScaled = true
+OpenCloseKey.TextSize = 14.000
+OpenCloseKey.TextWrapped = true
+
+UICorner_50.Parent = OpenCloseKey
+
+DestroyKeyHandler.Name = "DestroyKeyHandler"
+DestroyKeyHandler.Parent = HelpFrame
+DestroyKeyHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DestroyKeyHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_51.Parent = DestroyKeyHandler
+
+DestroyLabel.Name = "DestroyLabel"
+DestroyLabel.Parent = DestroyKeyHandler
+DestroyLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DestroyLabel.BackgroundTransparency = 1.000
+DestroyLabel.BorderSizePixel = 0
+DestroyLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+DestroyLabel.Size = UDim2.new(0, 200, 0, 30)
+DestroyLabel.Font = Enum.Font.GothamBlack
+DestroyLabel.Text = "Destroy Key"
+DestroyLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+DestroyLabel.TextSize = 18.000
+
+KeyCode2.Name = "KeyCode2"
+KeyCode2.Parent = DestroyKeyHandler
+KeyCode2.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+KeyCode2.BorderSizePixel = 0
+KeyCode2.Position = UDim2.new(0.868571401, 0, 0.199999988, 0)
+KeyCode2.Size = UDim2.new(0, 30, 0, 30)
+KeyCode2.Font = Enum.Font.GothamBlack
+KeyCode2.Text = "M"
+KeyCode2.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyCode2.TextScaled = true
+KeyCode2.TextSize = 14.000
+KeyCode2.TextWrapped = true
+
+UICorner_52.Parent = KeyCode2
+
+VersionHandler.Name = "VersionHandler"
+VersionHandler.Parent = HelpFrame
+VersionHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+VersionHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_53.Parent = VersionHandler
+
+VersionLabel.Name = "VersionLabel"
+VersionLabel.Parent = VersionHandler
+VersionLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VersionLabel.BackgroundTransparency = 1.000
+VersionLabel.BorderSizePixel = 0
+VersionLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+VersionLabel.Size = UDim2.new(0, 200, 0, 30)
+VersionLabel.Font = Enum.Font.GothamBlack
+VersionLabel.Text = "Decoded"
+VersionLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+VersionLabel.TextSize = 18.000
+
+VersionText.Name = "VersionText"
+VersionText.Parent = VersionHandler
+VersionText.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+VersionText.BorderSizePixel = 0
+VersionText.Position = UDim2.new(0.668571353, 0, 0.199999988, 0)
+VersionText.Size = UDim2.new(0, 100, 0, 30)
+VersionText.Font = Enum.Font.GothamBlack
+VersionText.Text = "LOL"
+VersionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+VersionText.TextScaled = true
+VersionText.TextSize = 14.000
+VersionText.TextWrapped = true
+
+UICorner_54.Parent = VersionText
+
+UpdateGuiHandler.Name = "UpdateGuiHandler"
+UpdateGuiHandler.Parent = HelpFrame
+UpdateGuiHandler.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+UpdateGuiHandler.Size = UDim2.new(0, 350, 0, 50)
+
+UICorner_55.Parent = UpdateGuiHandler
+
+UpdateGuiLabel.Name = "UpdateGuiLabel"
+UpdateGuiLabel.Parent = UpdateGuiHandler
+UpdateGuiLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateGuiLabel.BackgroundTransparency = 1.000
+UpdateGuiLabel.BorderSizePixel = 0
+UpdateGuiLabel.Position = UDim2.new(0.0257142857, 0, 0.200000003, 0)
+UpdateGuiLabel.Size = UDim2.new(0, 200, 0, 30)
+UpdateGuiLabel.Font = Enum.Font.GothamBlack
+UpdateGuiLabel.Text = "Update Gui"
+UpdateGuiLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateGuiLabel.TextSize = 18.000
+
+UpdateButton.Name = "UpdateButton"
+UpdateButton.Parent = UpdateGuiHandler
+UpdateButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+UpdateButton.BorderSizePixel = 0
+UpdateButton.Position = UDim2.new(0.668571413, 0, 0.200000003, 0)
+UpdateButton.Size = UDim2.new(0, 100, 0, 30)
+UpdateButton.Font = Enum.Font.GothamBlack
+UpdateButton.Text = "Update"
+UpdateButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateButton.TextScaled = true
+UpdateButton.TextSize = 14.000
+UpdateButton.TextWrapped = true
+
+UICorner_56.Parent = UpdateButton
+
+local OwnPass = game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, 96651)
+local States = {}
+local LoopKill = {}
+local UpdateHttps = "https://pastebin.com/raw/KQ4P3ckU"
+
+function GetPlayer(String)
+	if not String then return end
+	local Yes = {}
+	for i,v in ipairs(game.Players:GetPlayers()) do
+		if string.lower(v.Name):match(string.lower(String)) or string.lower(v.DisplayName):match(string.lower(String)) then
+			table.insert(Yes, v)
+		end
+	end
+	if #Yes > 0 then
+		return Yes[1]
+	elseif #Yes < 1 then
+		return nil
+	end
+end
+
+function Kill(Player)
+	pcall(function()
+		if Player.Character:FindFirstChild("ForceField") or not workspace:FindFirstChild(Player.Name) or not workspace:FindFirstChild(Player.Name):FindFirstChild("Head") or Player == nil or Player.Character.Parent ~= workspace then return end
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+		local MyTeam = game.Players.LocalPlayer.TeamColor.Name
+		if Player.TeamColor.Name == game.Players.LocalPlayer.TeamColor.Name then
+			local savedcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			local savedcamcf = workspace.CurrentCamera.CFrame
+			workspace.Remote.loadchar:InvokeServer(nil, BrickColor.random().Name)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+			workspace.CurrentCamera.CFrame = savedcamcf
+			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+		end
+		local Gun = game.Players.LocalPlayer.Character:FindFirstChild("Remington 870") or game.Players.LocalPlayer.Backpack:FindFirstChild("Remington 870")
+		local FireEvent = {
+			[1] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}, [2] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}, [3] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}, [4] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}, [5] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}, [6] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}, [7] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}, [8] = {
+				["RayObject"] = Ray.new(Vector3.new(), Vector3.new()), 
+				["Distance"] = 0, 
+				["Cframe"] = CFrame.new(), 
+				["Hit"] = workspace[Player.Name].Head
+			}
+		}
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(FireEvent, Gun)
+		Gun.Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Character["Remington 870"]:Destroy()
+	end)
+end
+
+OpenLocal.MouseButton1Click:Connect(function()
+	LocalFrame.Visible = true
+	RageFrame.Visible = false
+	HelpFrame.Visible = false
+	OpenLocal.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	OpenRage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	OpenHelp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+end)
+
+OpenRage.MouseButton1Click:Connect(function()
+	LocalFrame.Visible = false
+	RageFrame.Visible = true
+	HelpFrame.Visible = false
+	OpenLocal.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	OpenRage.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	OpenHelp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+end)
+
+OpenHelp.MouseButton1Click:Connect(function()
+	LocalFrame.Visible = false
+	RageFrame.Visible = false
+	HelpFrame.Visible = true
+	OpenLocal.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	OpenRage.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	OpenHelp.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+end)
+
+SetSpeed.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(SpeedText.Text) or 16
+end)
+
+SetJumpPower.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(JumpPowerText.Text) or 50
+end)
+
+GetGun.MouseButton1Click:Connect(function()
+	if OwnPass then
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+	else
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+	end
+end)
+
+RePlayer.MouseButton1Click:Connect(function()
+	local savedcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	local savedcamcf = workspace.CurrentCamera.CFrame
+	workspace.Remote.loadchar:InvokeServer()
+	workspace.CurrentCamera.CFrame = savedcamcf
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+end)
+
+RespawnPlayer.MouseButton1Click:Connect(function()
+	workspace.Remote.loadchar:InvokeServer()
+end)
+
+GodMode.MouseButton1Click:Connect(function()
+	if States.GodMode == true then
+		States.GodMode = false
+		GodMode.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	else
+		States.GodMode = true
+		GodMode.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	end
+	while wait() do
+		if States.GodMode then
+			pcall(function()
+				game.Players.LocalPlayer.Character.Humanoid.Name = 1
+				local l = game.Players.LocalPlayer.Character["1"]:Clone()
+				l.Parent = game.Players.LocalPlayer.Character
+				l.Name = "Humanoid"
+				game.Players.LocalPlayer.Character.Animate.Disabled = true
+				wait()
+				game.Players.LocalPlayer.Character.Animate.Disabled = false
+				game.Players.LocalPlayer.Character["1"]:Destroy()
+				game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+				game.Players.LocalPlayer.CharacterRemoving:Wait()
+				local savedcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				local savedcamcf = workspace.CurrentCamera.CFrame
+				workspace.Remote.loadchar:InvokeServer()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+				workspace.CurrentCamera.CFrame = savedcamcf
+			end)
+		end
+	end
+end)
+
+TeamInmate.MouseButton1Click:Connect(function()
+	workspace.Remote.TeamEvent:FireServer("Bright orange")
+end)
+
+TeamGuard.MouseButton1Click:Connect(function()
+	workspace.Remote.TeamEvent:FireServer("Bright blue")
+end)
+
+TeamCriminal.MouseButton1Click:Connect(function()
+	local savedcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	local savedcamcf = workspace.CurrentCamera.CFrame
+	local CrimPad = workspace["Criminals Spawn"].SpawnLocation
+	CrimPad.CanCollide = false
+	CrimPad.Transparency = 1
+	CrimPad.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	wait()
+	CrimPad.CanCollide = true
+	CrimPad.Transparency = 0
+	CrimPad.CFrame = CFrame.new(-920.510803, 92.2271957, 2138.27002, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+	workspace.CurrentCamera.CFrame = savedcamcf
+end)
+
+TeamNeutral.MouseButton1Click:Connect(function()
+	workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+end)
+
+Invisible.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local position = player.Character.HumanoidRootPart.Position
+	player.Character:MoveTo(position + Vector3.new(0, 1000000, 0))
+	local humanoidrootpart = player.Character.HumanoidRootPart:Clone()
+	player.Character.HumanoidRootPart:Destroy()
+	humanoidrootpart.Parent = player.Character
+	player.Character:MoveTo(position)
+end)
+
+KillNeutral.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Teams.Neutral:GetPlayers()) do
+		if v ~= game.Players.LocalPlayer then
+			Kill(v)
+		end
+	end
+end)
+
+KillCriminal.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Teams.Criminals:GetPlayers()) do
+		if v ~= game.Players.LocalPlayer then
+			Kill(v)
+		end
+	end
+end)
+
+KillGuard.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Teams.Guards:GetPlayers()) do
+		if v ~= game.Players.LocalPlayer then
+			Kill(v)
+		end
+	end
+end)
+
+KillInmate.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Teams.Inmates:GetPlayers()) do
+		if v ~= game.Players.LocalPlayer then
+			Kill(v)
+		end
+	end
+end)
+
+KillPlayer.MouseButton1Click:Connect(function()
+	Kill(GetPlayer(PlayerName.Text))
+end)
+
+States.LoopKills_Neutral = false
+States.LoopKills_Criminal = false
+States.LoopKills_Inmate = false
+States.LoopKills_Guard = false
+States.KillAura = false
+States.KillAura_Neutral = false
+States.KillAura_Criminal = false
+States.KillAura_Guard = false
+States.KillAura_Inmate = false
+
+LoopKillNeutral.MouseButton1Click:Connect(function()
+	if States.LoopKills_Neutral == true then
+		States.LoopKills_Neutral = false
+		LoopKillNeutral.Text = "X"
+	else
+		States.LoopKills_Neutral = true
+		LoopKillNeutral.Text = ""
+	end
+	while wait() do
+		if States.LoopKills_Neutral then
+			for i,v in pairs(game.Teams.Neutral:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if v.Character.Humanoid.Health > 0 then
+							Kill(v)
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+LoopKillCriminal.MouseButton1Click:Connect(function()
+	if States.LoopKills_Criminal == true then
+		States.LoopKills_Criminal = false
+		LoopKillCriminal.Text = "X"
+	else
+		States.LoopKills_Criminal = true
+		LoopKillCriminal.Text = ""
+	end
+	while wait() do
+		if States.LoopKills_Criminal then
+			for i,v in pairs(game.Teams.Criminals:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if v.Character.Humanoid.Health > 0 then
+							Kill(v)
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+LoopKillGuard.MouseButton1Click:Connect(function()
+	if States.LoopKills_Guard == true then
+		States.LoopKills_Guard = false
+		LoopKillGuard.Text = "X"
+	else
+		States.LoopKills_Guard = true
+		LoopKillGuard.Text = ""
+	end
+	while wait() do
+		if States.LoopKills_Guard then
+			for i,v in pairs(game.Teams.Guards:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if v.Character.Humanoid.Health > 0 then
+							Kill(v)
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+LoopKillInmate.MouseButton1Click:Connect(function()
+	if States.LoopKills_Inmate == true then
+		States.LoopKills_Inmate = false
+		LoopKillInmate.Text = "X"
+	else
+		States.LoopKills_Inmate = true
+		LoopKillInmate.Text = ""
+	end
+	while wait() do
+		if States.LoopKills_Inmate then
+			for i,v in pairs(game.Teams.Inmates:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if v.Character.Humanoid.Health > 0 then
+							Kill(v)
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+LoopKillPlayer.MouseButton1Click:Connect(function()
+	local player = GetPlayer(PlayerName2.Text)
+	if player then
+		if not LoopKill[player.UserId] then
+			LoopKill[player.UserId] = {Player = player}
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Notification",
+				Text = "Click Again To Unloop Kills "..player.DisplayName,
+				Button1 = "OK"
+			})
+		else
+			LoopKill[player.UserId] = nil
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Notification",
+				Text = "Click Again To Loop Kills "..player.DisplayName,
+				Button1 = "OK"
+			})
+		end
+	end
+	while wait() do
+		for i,v in pairs(LoopKill) do
+			pcall(function()
+				if v.Player then
+					if v.Player.Character.Humanoid.Health > 0 then
+						Kill(v.Player)
+					end
+				end
+			end)
+		end
+	end
+end)
+
+KillAuraNeutral.MouseButton1Click:Connect(function()
+	if States.KillAura_Neutral == true then
+		States.KillAura_Neutral = false
+		KillAuraNeutral.Text = "X"
+	else
+		States.KillAura_Neutral = true
+		KillAuraNeutral.Text = ""
+	end
+	while wait() do
+		if States.KillAura_Neutral then
+			for i,v in pairs(game.Teams.Neutral:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 15 then
+							for i = 1,25 do
+								coroutine.wrap(function()
+									game.ReplicatedStorage.meleeEvent:FireServer(v)	
+								end)()
+							end
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+KillAuraCriminal.MouseButton1Click:Connect(function()
+	if States.KillAura_Criminal == true then
+		States.KillAura_Criminal = false
+		KillAuraCriminal.Text = "X"
+	else
+		States.KillAura_Criminal = true
+		KillAuraCriminal.Text = ""
+	end
+	while wait() do
+		if States.KillAura_Criminal then
+			for i,v in pairs(game.Teams.Criminals:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 15 then
+							for i = 1,25 do
+								coroutine.wrap(function()
+									game.ReplicatedStorage.meleeEvent:FireServer(v)	
+								end)()
+							end
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+KillAuraGuard.MouseButton1Click:Connect(function()
+	if States.KillAura_Guard == true then
+		States.KillAura_Guard = false
+		KillAuraGuard.Text = "X"
+	else
+		States.KillAura_Guard = true
+		KillAuraGuard.Text = ""
+	end
+	while wait() do
+		if States.KillAura_Guard then
+			for i,v in pairs(game.Teams.Guards:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 15 then
+							for i = 1,25 do
+								coroutine.wrap(function()
+									game.ReplicatedStorage.meleeEvent:FireServer(v)	
+								end)()
+							end
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+KillAuraInmate.MouseButton1Click:Connect(function()
+	if States.KillAura_Inmate == true then
+		States.KillAura_Inmate = false
+		KillAuraInmate.Text = "X"
+	else
+		States.KillAura_Inmate = true
+		KillAuraInmate.Text = ""
+	end
+	while wait() do
+		if States.KillAura_Inmate then
+			for i,v in pairs(game.Teams.Inmates:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 15 then
+							for i = 1,25 do
+								coroutine.wrap(function()
+									game.ReplicatedStorage.meleeEvent:FireServer(v)	
+								end)()
+							end
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+KillAura.MouseButton1Click:Connect(function()
+	if States.KillAura == true then
+		States.KillAura = false
+		KillAura.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	else
+		States.KillAura = true
+		KillAura.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	end
+	while wait() do
+		if States.KillAura then
+			for i,v in pairs(game.Players:GetPlayers()) do
+				pcall(function()
+					if v ~= game.Players.LocalPlayer then
+						if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 15 then
+							for i = 1,25 do
+								coroutine.wrap(function()
+									game.ReplicatedStorage.meleeEvent:FireServer(v)	
+								end)()
+							end
+						end
+					end
+				end)
+			end
+		end
+	end
+end)
+
+UpdateButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet((UpdateHttps), true))()
+end)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(Key)
+	if Key == "q" then
+		if Background.Visible == true then
+			Background.Visible = false
+		else
+			Background.Visible = true
+		end
+	elseif Key == "m" then
+		PrisonKiller:Destroy()
+		PrisonKiller = nil
+	end
+end)
