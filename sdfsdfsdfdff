@@ -329,6 +329,5 @@ CypherLoadingMain.BackgroundTransparency = 0.99
 wait(0.01)
 CypherLoadingMain.BackgroundTransparency = 1
 wait(0.01)
-if game.CoreGui:FindFirstChild("CypherBrew") then
-	game.CoreGui:FindFirstChild("CypherBrew"):Destroy()
-end;
+CypherLoadingMain:Destroy()
+CyberBrew:Destroy()
