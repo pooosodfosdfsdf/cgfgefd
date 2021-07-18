@@ -1,0 +1,334 @@
+
+
+
+local CypherBrewLoadingScreen = Instance.new("ScreenGui")
+local CypherLoadingMain = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local LoadingLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local loadinglabel2 = Instance.new("TextLabel")
+
+--Properties:
+
+CypherBrewLoadingScreen.Name = "CypherBrew Loading Screen"
+CypherBrewLoadingScreen.Parent = game.CoreGui
+CypherBrewLoadingScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+CypherLoadingMain.Name = "CypherLoadingMain"
+CypherLoadingMain.Parent = CypherBrewLoadingScreen
+CypherLoadingMain.Active = true
+CypherLoadingMain.AnchorPoint = Vector2.new(0.5, 0.5)
+CypherLoadingMain.BackgroundColor3 = Color3.fromRGB(3, 3, 3)
+CypherLoadingMain.BorderSizePixel = 0
+CypherLoadingMain.Position = UDim2.new(0.5, 0, 0.5, 0)
+CypherLoadingMain.Size = UDim2.new(0, 681, 0, 396)
+
+TextLabel.Parent = CypherLoadingMain
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0161290318, 0, 0.106375843, 0)
+TextLabel.Size = UDim2.new(0, 164, 0, 19)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Venus ALPHA"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 15.000
+
+TextLabel_2.Parent = CypherLoadingMain
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0161290318, 0, 0.168307245, 0)
+TextLabel_2.Size = UDim2.new(0, 230, 0, 18)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "(c) Venus Just Released!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 15.000
+
+TextLabel_3.Parent = CypherLoadingMain
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 0.321551085, 0)
+TextLabel_3.Size = UDim2.new(0, 99, 0, 15)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "C:\\Venus\\Gui>"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 15.000
+
+LoadingLabel.Name = "LoadingLabel"
+LoadingLabel.Parent = CypherLoadingMain
+LoadingLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingLabel.BackgroundTransparency = 1.000
+LoadingLabel.BorderSizePixel = 0
+LoadingLabel.Position = UDim2.new(0.174093649, 0, 0.321551085, 0)
+LoadingLabel.Size = UDim2.new(0, 273, 0, 15)
+LoadingLabel.Font = Enum.Font.SourceSans
+LoadingLabel.Text = ""
+LoadingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadingLabel.TextSize = 15.000
+LoadingLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame.Parent = CypherLoadingMain
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 565, 0, 32)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0, 0, -0.0153104067, 0)
+ImageLabel.Size = UDim2.new(0, 29, 0, 27)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=5040009517"
+
+loadinglabel2.Name = "loading label2"
+loadinglabel2.Parent = Frame
+loadinglabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loadinglabel2.BackgroundTransparency = 1.000
+loadinglabel2.BorderSizePixel = 0
+loadinglabel2.Position = UDim2.new(0.0637976825, 0, 0.0553691387, 0)
+loadinglabel2.Size = UDim2.new(0, 164, 0, 27)
+loadinglabel2.Font = Enum.Font.SourceSans
+loadinglabel2.Text = "Venus The GUI"
+loadinglabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+loadinglabel2.TextSize = 15.000
+
+--// Scripts:
+loadinglabel2.Text = "Loaded!"
+wait(0.4)
+loadinglabel2.Text = "Made by Raid#5015"
+wait(0.4)
+loadinglabel2.Text = "Venus"
+wait(0.4)
+LoadingLabel.Text = "Loading..."
+wait(0.4)
+LoadingLabel.Text = "Loading.."
+wait(0.4)
+LoadingLabel.Text = "Loading."
+wait(0.4)
+LoadingLabel.Text = "Loading"
+wait(0.4)
+LoadingLabel.Text = "Loading..."
+wait(0.4)
+LoadingLabel.Text = "Loading.."
+wait(0.4)
+LoadingLabel.Text = "Loading."
+wait(0.4)
+LoadingLabel.Text = "Loading"
+wait(0.4)
+LoadingLabel.Text = "Ready To Use!"
+wait(1)
+LoadingLabel.Text = "Closing..."
+
+Frame:Destroy()
+LoadingLabel:Destroy()
+loadinglabel2:Destroy()
+TextLabel_2:Destroy()
+TextLabel:Destroy()
+TextLabel_3:Destroy()
+
+
+CypherLoadingMain.BackgroundTransparency = 0.01
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.02
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.03
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.04
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.05
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.06
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.07
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.08
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.09
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.1
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.11
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.12
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.13
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.14
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.15
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.16
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.17
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.18
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.19
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.20
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.21
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.22
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.23
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.24
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.25
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.26
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.27
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.28
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.29
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.30
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.31
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.32
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.33
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.34
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.35
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.36
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.36
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.37
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.38
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.39
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.40
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.41
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.42
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.43
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.44
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.45
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.46
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.47
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.48
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.49
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.50
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.51
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.52
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.53
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.54
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.55
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.56
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.57
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.58
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.59
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.60
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.61
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.62
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.63
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.64
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.65
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.66
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.67
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.68
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.69
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.70
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.71
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.72
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.73
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.74
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.75
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.76
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.79
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.80
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.81
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.82
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.83
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.84
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.85
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.86
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.87
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.88
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.89
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.90
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.91
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.92
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.93
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.94
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.95
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.96
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.97
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.98
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.99
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 1
+wait(0.01)
+if game.CoreGui:FindFirstChild("CypherBrew") then
+	game.CoreGui:FindFirstChild("CypherBrew"):Destroy()
+end;
