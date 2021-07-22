@@ -1,0 +1,223 @@
+local scree = Instance.new("ScreenGui")
+local froggers = Instance.new("Frame")
+local frametab = Instance.new("Frame")
+local frameaudi = Instance.new("Frame")
+local playbutton = Instance.new("TextButton")
+local idnumb = Instance.new("TextBox")
+local TextLabel_4 = Instance.new("TextLabel")
+local grabtools = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local equiptool = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local exoot = Instance.new("TextButton")
+local mini = Instance.new("TextButton")
+local unmini = Instance.new("TextButton")
+
+scree.Name = "scree"
+scree.Parent = game.CoreGui
+scree.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+froggers.Name = "froggers"
+froggers.Parent = scree
+froggers.Active = true
+froggers.BackgroundColor3 = Color3.new(30,30,30)
+froggers.BorderColor3 = Color3.new(0.254902, 0, 0)
+froggers.Position = UDim2.new(0.108471535, 0, 0.0766609758, 0)
+froggers.Size = UDim2.new(0, 429, 0, 31)
+froggers.Draggable = true
+
+frametab.Name = "frametab"
+frametab.Parent = froggers
+frametab.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+frametab.Position = UDim2.new(-0.00171382166, 0, 1.29032254, 0)
+frametab.Size = UDim2.new(0, 430, 0, 405)
+
+
+
+frameaudi.Name = "frameaudi"
+frameaudi.Parent = frametab
+frameaudi.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+frameaudi.BorderColor3 = Color3.new(0,0,0)
+frameaudi.BorderSizePixel = 1
+frameaudi.Position = UDim2.new(0.0175438598, 0, 0.553191543, 0)
+frameaudi.Size = UDim2.new(0, 221, 0, 152)
+
+playbutton.Name = "playbutton"
+playbutton.Parent = frameaudi
+playbutton.BackgroundColor3 = Color3.new(1, 1, 1)
+playbutton.BackgroundTransparency = 0.80000001192093
+playbutton.Position = UDim2.new(0.206266761, 0, 0.548404515, 0)
+playbutton.Size = UDim2.new(0, 126, 0, 39)
+playbutton.Font = Enum.Font.SourceSans
+playbutton.Text = "PLAY"
+playbutton.TextColor3 = Color3.new(0, 0, 0)
+playbutton.TextScaled = true
+playbutton.TextSize = 14
+playbutton.TextWrapped = true
+
+idnumb.Name = "idnumb"
+idnumb.Parent = frameaudi
+idnumb.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+idnumb.Position = UDim2.new(0.0965924188, 0, 0.320107907, 0)
+idnumb.Size = UDim2.new(0, 176, 0, 35)
+idnumb.Font = Enum.Font.SourceSans
+idnumb.PlaceholderColor3 = Color3.new(0.698039, 0.698039, 0.698039)
+idnumb.Text = ""
+idnumb.TextColor3 = Color3.new(0, 0.215686, 0.34902)
+idnumb.TextScaled = true
+idnumb.TextSize = 14
+idnumb.TextWrapped = true
+
+TextLabel_4.Parent = frameaudi
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.Position = UDim2.new(-0.00323513942, 0, -0.0050719413, 0)
+TextLabel_4.Size = UDim2.new(0, 221, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Audio Player"
+TextLabel_4.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14
+TextLabel_4.TextWrapped = true
+
+grabtools.Name = "grabtools"
+grabtools.Parent = frametab
+grabtools.BackgroundColor3 = Color3.new(1, 1, 1)
+grabtools.Position = UDim2.new(0.0175438598, 0, 0.0531914905, 0)
+grabtools.Size = UDim2.new(0, 53, 0, 48)
+grabtools.Style = Enum.ButtonStyle.RobloxButton
+grabtools.Font = Enum.Font.Arial
+grabtools.Text = "X"
+grabtools.TextColor3 = Color3.new(1, 1, 1)
+grabtools.TextScaled = true
+grabtools.TextSize = 14
+grabtools.TextWrapped = true
+
+TextLabel_5.Parent = frametab
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.Position = UDim2.new(0.153508738, 0, 0.0531914905, 0)
+TextLabel_5.Size = UDim2.new(0, 169, 0, 48)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Grab Tools"
+TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14
+TextLabel_5.TextWrapped = true
+
+equiptool.Name = "equiptool"
+equiptool.Parent = frametab
+equiptool.BackgroundColor3 = Color3.new(1, 1, 1)
+equiptool.Position = UDim2.new(0.0175438598, 0, 0.187234044, 0)
+equiptool.Size = UDim2.new(0, 53, 0, 48)
+equiptool.Style = Enum.ButtonStyle.RobloxButton
+equiptool.Font = Enum.Font.Arial
+equiptool.Text = "X"
+equiptool.TextColor3 = Color3.new(1, 1, 1)
+equiptool.TextScaled = true
+equiptool.TextSize = 14
+equiptool.TextWrapped = true
+
+TextLabel_6.Parent = frametab
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.Position = UDim2.new(0.153508738, 0, 0.187234044, 0)
+TextLabel_6.Size = UDim2.new(0, 169, 0, 48)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Equip All Tools"
+TextLabel_6.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14
+TextLabel_6.TextWrapped = true
+
+exoot.Name = "exoot"
+exoot.Parent = froggers
+exoot.BackgroundColor3 = Color3.new(1, 0, 0)
+exoot.BackgroundTransparency = 0.69999998807907
+exoot.BorderSizePixel = 0
+exoot.Position = UDim2.new(0.925458908, 0, 0, 0)
+exoot.Size = UDim2.new(0, 32, 0, 31)
+exoot.Font = Enum.Font.GothamBold
+exoot.Text = "X"
+exoot.TextColor3 = Color3.new(0, 0, 0)
+exoot.TextScaled = true
+exoot.TextSize = 14
+exoot.TextWrapped = true
+
+mini.Name = "mini"
+mini.Parent = froggers
+mini.BackgroundColor3 = Color3.new(1, 0.784314, 0)
+mini.BackgroundTransparency = 0.69999998807907
+mini.BorderSizePixel = 0
+mini.Position = UDim2.new(0.850775003, 0, 0, 0)
+mini.Size = UDim2.new(0, 32, 0, 31)
+mini.Font = Enum.Font.GothamBold
+mini.Text = "-"
+mini.TextColor3 = Color3.new(0, 0, 0)
+mini.TextScaled = true
+mini.TextSize = 14
+mini.TextWrapped = true
+
+unmini.Name = "unmini"
+unmini.Parent = froggers
+unmini.Active = false
+unmini.BackgroundColor3 = Color3.new(1, 0.784314, 0)
+unmini.BackgroundTransparency = 0.69999998807907
+unmini.BorderSizePixel = 0
+unmini.Position = UDim2.new(0.850775003, 0, 0, 0)
+unmini.Size = UDim2.new(0, 32, 0, 31)
+unmini.Visible = false
+unmini.Font = Enum.Font.GothamBold
+unmini.Text = "+"
+unmini.TextColor3 = Color3.new(0, 0, 0)
+unmini.TextScaled = true
+unmini.TextSize = 14
+unmini.TextWrapped = true
+
+local lp = game.Players.LocalPlayer
+local m = lp:GetMouse()
+equiptool.MouseButton1Click:Connect(function()
+	equiptool.Text = "O"
+	for _,z in pairs(lp.Backpack:GetChildren()) do
+		if z:IsA'Tool' then
+			z.Parent = lp.Character
+		end
+	end
+	wait(0.5)
+	equiptool.Text = "X"
+end)
+grabtools.MouseButton1Click:Connect(function()
+	grabtools.Text = "O"
+	for _,z in pairs(game.Workspace:GetDescendants()) do
+		if z.Name == "BoomBox" then
+			z.Handle.CFrame = lp.Character.Torso.CFrame
+		end
+	end
+	wait(0.5)
+	grabtools.Text = "X"
+end)
+playbutton.MouseButton1Click:Connect(function()
+	local id = idnumb.Text
+	for _,z in pairs(lp.Character:GetChildren()) do
+		if z.Name == "BoomBox" then
+			z.Remote:FireServer("PlaySong", id)
+		end
+	end
+end)
+mini.MouseButton1Click:Connect(function()
+	mini.Active = false
+	mini.Visible = false
+	unmini.Active = true
+	unmini.Visible = true
+	frametab.Position = UDim2.new(-0.00171382166, 0, 999, 0)
+end)
+unmini.MouseButton1Click:Connect(function()
+	mini.Active = true
+	mini.Visible = true
+	unmini.Active = false
+	unmini.Visible = false
+	frametab.Position = UDim2.new(-0.00171382166, 0, 1.29032254, 0)
+end)
+exoot.MouseButton1Click:Connect(function()
+	scree:Destroy()
+end)
