@@ -1,3 +1,219 @@
+local CypherBrewLoadingScreen = Instance.new("ScreenGui")
+local CypherLoadingMain = Instance.new("Frame")
+
+--Properties:
+
+CypherBrewLoadingScreen.Name = "CypherBrew Loading Screen"
+CypherBrewLoadingScreen.Parent = game.CoreGui
+
+CypherLoadingMain.Name = "CypherLoadingMain"
+CypherLoadingMain.Parent = CypherBrewLoadingScreen
+CypherLoadingMain.AnchorPoint = Vector2.new(0.5, 0.5)
+CypherLoadingMain.BackgroundColor3 = Color3.fromRGB(3, 3, 3)
+CypherLoadingMain.BorderSizePixel = 0
+CypherLoadingMain.Position = UDim2.new(0.5, 0, 0.5, 0)
+CypherLoadingMain.Size = UDim2.new(0, 681, 0, 396)
+
+
+CypherLoadingMain.BackgroundTransparency = 0.01
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.02
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.03
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.04
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.05
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.06
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.07
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.08
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.09
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.1
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.11
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.12
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.13
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.14
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.15
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.16
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.17
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.18
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.19
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.20
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.21
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.22
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.23
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.24
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.25
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.26
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.27
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.28
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.29
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.30
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.31
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.32
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.33
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.34
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.35
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.36
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.36
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.37
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.38
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.39
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.40
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.41
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.42
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.43
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.44
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.45
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.46
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.47
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.48
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.49
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.50
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.51
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.52
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.53
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.54
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.55
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.56
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.57
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.58
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.59
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.60
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.61
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.62
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.63
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.64
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.65
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.66
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.67
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.68
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.69
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.70
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.71
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.72
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.73
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.74
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.75
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.76
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.79
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.80
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.81
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.82
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.83
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.84
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.85
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.86
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.87
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.88
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.89
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.90
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.91
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.92
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.93
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.94
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.95
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.96
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.97
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 0.98
+wait(0.02)
+CypherLoadingMain.BackgroundTransparency = 0.99
+wait(0.01)
+CypherLoadingMain.BackgroundTransparency = 1
+
+
 local DiscordLib = {}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -3245,219 +3461,3 @@ function DiscordLib:Window(text)
 	return ServerHold
 end
 return DiscordLib
-local CypherBrewLoadingScreen = Instance.new("ScreenGui")
-local CypherLoadingMain = Instance.new("Frame")
-
---Properties:
-
-CypherBrewLoadingScreen.Name = "CypherBrew Loading Screen"
-CypherBrewLoadingScreen.Parent = game.CoreGui
-CypherBrewLoadingScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-CypherLoadingMain.Name = "CypherLoadingMain"
-CypherLoadingMain.Parent = CypherBrewLoadingScreen
-CypherLoadingMain.Active = true
-CypherLoadingMain.AnchorPoint = Vector2.new(0.5, 0.5)
-CypherLoadingMain.BackgroundColor3 = Color3.fromRGB(3, 3, 3)
-CypherLoadingMain.BorderSizePixel = 0
-CypherLoadingMain.Position = UDim2.new(0.5, 0, 0.5, 0)
-CypherLoadingMain.Size = UDim2.new(0, 681, 0, 396)
-
-
-CypherLoadingMain.BackgroundTransparency = 0.01
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.02
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.03
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.04
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.05
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.06
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.07
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.08
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.09
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.1
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.11
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.12
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.13
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.14
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.15
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.16
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.17
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.18
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.19
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.20
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.21
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.22
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.23
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.24
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.25
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.26
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.27
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.28
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.29
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.30
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.31
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.32
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.33
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.34
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.35
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.36
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.36
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.37
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.38
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.39
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.40
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.41
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.42
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.43
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.44
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.45
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.46
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.47
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.48
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.49
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.50
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.51
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.52
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.53
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.54
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.55
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.56
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.57
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.58
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.59
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.60
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.61
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.62
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.63
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.64
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.65
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.66
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.67
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.68
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.69
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.70
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.71
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.72
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.73
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.74
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.75
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.76
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.79
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.80
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.81
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.82
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.83
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.84
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.85
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.86
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.87
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.88
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.89
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.90
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.91
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.92
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.93
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.94
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.95
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.96
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.97
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 0.98
-wait(0.02)
-CypherLoadingMain.BackgroundTransparency = 0.99
-wait(0.01)
-CypherLoadingMain.BackgroundTransparency = 1
