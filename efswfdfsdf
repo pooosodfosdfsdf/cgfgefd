@@ -212,6 +212,8 @@ wait(0.02)
 CypherLoadingMain.BackgroundTransparency = 0.99
 wait(0.01)
 CypherLoadingMain.BackgroundTransparency = 1
+wait(0.02)
+CypherLoadingMain:Destroy()
 
 
 local DiscordLib = {}
