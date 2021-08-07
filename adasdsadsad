@@ -21,6 +21,7 @@ local themes = {
 	LightContrast = Color3.fromRGB(189, 175, 175), 
 	DarkContrast = Color3.fromRGB(50, 50, 50),  
 	TextColor = Color3.fromRGB(10, 10, 10)
+}
 
 do
 	function utility:Create(instance, properties, children)
