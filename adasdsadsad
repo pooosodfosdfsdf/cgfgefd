@@ -1,4 +1,4 @@
---Imagine Stealing a UI. Desperate Bum... VENUS / gunna#5015 MADE THIS UI LOOK LLLLLLL
+--Imagine Stealing a UI. Desperate Bum... VENUS / gunna#5015 MADE THIS UI LLLLLLL
 
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -15,13 +15,14 @@ local utility = {}
 -- Fucking Main Theme Shit
 local objects = {}
 local themes = {
-	Background = Color3.fromRGB(253, 253, 253), 
-	Glow = Color3.fromRGB(254, 254, 254), 
-	Accent = Color3.fromRGB(50, 50, 50), 
-	LightContrast = Color3.fromRGB(189, 175, 175), 
-	DarkContrast = Color3.fromRGB(50, 50, 50),  
-	TextColor = Color3.fromRGB(10, 10, 10)
+	Background = Color3.fromRGB(36, 36, 36), 
+	Glow = Color3.fromRGB(254, 254, 254),
+	Accent = Color3.fromRGB(36, 36, 36), 
+	LightContrast = Color3.fromRGB(44, 44, 44), 
+	DarkContrast = Color3.fromRGB(65, 65, 65),
+	TextColor = Color3.fromRGB(255, 255, 255)
 }
+	Accent = Color3.fromRGB(50, 50, 50), 
 
 do
 	function utility:Create(instance, properties, children)
