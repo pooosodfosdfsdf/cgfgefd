@@ -22,7 +22,6 @@ local themes = {
 	DarkContrast = Color3.fromRGB(65, 65, 65),
 	TextColor = Color3.fromRGB(255, 255, 255)
 }
-	Accent = Color3.fromRGB(50, 50, 50), 
 
 do
 	function utility:Create(instance, properties, children)
