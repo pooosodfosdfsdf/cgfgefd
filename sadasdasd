@@ -349,7 +349,7 @@ function UILibrary.Load(GUITitle)
 		if SearchBarIncluded then
 			local SearchBarContainer = RoundBox(5)
 			SearchBarContainer.Name = "SearchBar"
-			SearchBarContainer.ImageColor3 = Color3.fromRGB(10,10,10)
+			SearchBarContainer.ImageColor3 = Color3.fromRGB(15,15,15)
 			SearchBarContainer.Size = UDim2.new(1,0,0,20)
 			SearchBarContainer.Parent = DisplayPage
 			
@@ -357,7 +357,7 @@ function UILibrary.Load(GUITitle)
 			SearchBox.Name = "SearchInput"
 			SearchBox.Position = UDim2.new(0,20,0,0)
 			SearchBox.Size = UDim2.new(1,-20,1,0)
-			SearchBox.TextTransparency = 0.5
+			SearchBox.TextTransparency = 0.4
 			SearchBox.TextXAlignment = Enum.TextXAlignment.Left
 			SearchBox.Parent = SearchBarContainer
 			
@@ -393,7 +393,7 @@ function UILibrary.Load(GUITitle)
 			local ButtonForeground = RoundBox(5)
 			ButtonForeground.Name = "ButtonForeground"
 			ButtonForeground.Size = UDim2.new(1,0,1,0)
-			ButtonForeground.ImageColor3 = Color3.fromRGB(10,10,10)
+			ButtonForeground.ImageColor3 = Color3.fromRGB(15,15,15)
 			ButtonForeground.Parent = ButtonContainer
 			
 			if Underline then
@@ -603,7 +603,7 @@ function UILibrary.Load(GUITitle)
 			
 			local SliderForeground = RoundBox(5)
 			SliderForeground.Name = "SliderForeground"
-			SliderForeground.ImageColor3 = Color3.fromRGB(10,10,10)
+			SliderForeground.ImageColor3 = Color3.fromRGB(15,15,15)
 			SliderForeground.Size = UDim2.new(1,0,1,0)
 			SliderForeground.Parent = SliderContainer
 			
@@ -614,7 +614,7 @@ function UILibrary.Load(GUITitle)
 			
 			local SliderFill = RoundBox(5)
 			SliderFill.Size = UDim2.new(DefaultScale,0,1,0)
-			SliderFill.ImageColor3 = Color3.fromRGB(20,20,20)
+			SliderFill.ImageColor3 = Color3.fromRGB(25,25,25)
 			SliderFill.ZIndex = 5
 			SliderFill.ImageTransparency = 0.6
 			SliderFill.Parent = SliderButton
@@ -660,20 +660,20 @@ function UILibrary.Load(GUITitle)
 			local FlatLeft, FlatRight = Frame(), Frame()
 			
 			ToggleLeftSide.Size = UDim2.new(1,-22,1,0)
-			ToggleLeftSide.ImageColor3 = Color3.fromRGB(25,25,25)
+			ToggleLeftSide.ImageColor3 = Color3.fromRGB(15,15,15)
 			ToggleLeftSide.Parent = ToggleContainer
 			
 			ToggleRightSide.Position = UDim2.new(1,-20,0,0)
 			ToggleRightSide.Size = UDim2.new(0,20,1,0)
-			ToggleRightSide.ImageColor3 = Color3.fromRGB(35,35,35)
+			ToggleRightSide.ImageColor3 = Color3.fromRGB(25,25,25)
 			ToggleRightSide.Parent = ToggleContainer
 			
-			FlatLeft.BackgroundColor3 = Color3.fromRGB(25,25,25)
+			FlatLeft.BackgroundColor3 = Color3.fromRGB(15,15,15)
 			FlatLeft.Size = UDim2.new(0,5,1,0)
 			FlatLeft.Position = UDim2.new(1,-5,0,0)
 			FlatLeft.Parent = ToggleLeftSide
 			
-			FlatRight.BackgroundColor3 = Color3.fromRGB(35,35,35)
+			FlatRight.BackgroundColor3 = Color3.fromRGB(25,25,25)
 			FlatRight.Size = UDim2.new(0,5,1,0)
 			FlatRight.Parent = ToggleRightSide
 			
