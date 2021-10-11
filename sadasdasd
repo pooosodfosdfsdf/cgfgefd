@@ -193,7 +193,7 @@ function UILibrary.Load(GUITitle)
 			if saasdasd == "v" and asdasdasd == false then
 				asdasdasd = true
 				ContainerFrame.Visible = false
-			elseif saasdasd == "v" and saasdasd == true then
+			elseif saasdasd == "v" and asdasdasd == true then
 				asdasdasd = false
 				ContainerFrame.Visible = true
 			end	
