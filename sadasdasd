@@ -114,7 +114,7 @@ local function ScrollingFrame()
 	local NewScrollingFrame = Instance.new("ScrollingFrame")
 	NewScrollingFrame.BackgroundTransparency = 1
 	NewScrollingFrame.BorderSizePixel = 0
-	NewScrollingFrame.ScrollBarThickness = 1
+	NewScrollingFrame.ScrollBarThickness = 0
 	NewScrollingFrame.ZIndex = Level
 	return NewScrollingFrame
 end
@@ -291,7 +291,7 @@ function UILibrary.Load(GUITitle)
 		PageContainer.Name = PageTitle
 		PageContainer.Size = UDim2.new(0.92,0,0,20)
 		PageContainer.LayoutOrder = TabCount
-		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(5,5,5) or Color3.fromRGB(15,15,15)
+		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(10,10,10) or Color3.fromRGB(15,15,15)
 		PageContainer.Parent = MenuBar
 		
 		local PageButton = TextButton(PageTitle, 14)
