@@ -291,7 +291,7 @@ function UILibrary.Load(GUITitle)
 		PageContainer.Name = PageTitle
 		PageContainer.Size = UDim2.new(0.92,0,0,20)
 		PageContainer.LayoutOrder = TabCount
-		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(50,50,50) or Color3.fromRGB(40,40,40)
+		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(10,10,10) or Color3.fromRGB(20,20,20)
 		PageContainer.Parent = MenuBar
 		
 		local PageButton = TextButton(PageTitle, 14)
