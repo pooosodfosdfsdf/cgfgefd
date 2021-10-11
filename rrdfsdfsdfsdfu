@@ -113,8 +113,8 @@ end
 local function ScrollingFrame()
 	local NewScrollingFrame = Instance.new("ScrollingFrame")
 	NewScrollingFrame.BackgroundTransparency = 1
-	NewScrollingFrame.BorderSizePixel = 
-	NewScrollingFrame.ScrollBarThickness = 1
+	NewScrollingFrame.BorderSizePixel = 0
+	NewScrollingFrame.ScrollBarThickness = 0
 	NewScrollingFrame.ZIndex = Level
 	return NewScrollingFrame
 end
@@ -219,7 +219,7 @@ function UILibrary.Load(GUITitle)
 	MenuBar = ScrollingFrame()
 	MenuBar.Name = "MenuBar"
 	MenuBar.BackgroundTransparency = 0.7
-	MenuBar.BackgroundColor3 = Color3.fromRGB(20,20,20)
+	MenuBar.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	MenuBar.Size = UDim2.new(0,100,0,235)
 	MenuBar.Position = UDim2.new(0,5,0,30)
 	MenuBar.CanvasSize = UDim2.new(0,0,0,0)
@@ -227,7 +227,7 @@ function UILibrary.Load(GUITitle)
 	
 	DisplayFrame = RoundBox(5)
 	DisplayFrame.Name = "Display"
-	DisplayFrame.ImageColor3 = Color3.fromRGB(20,20,20)
+	DisplayFrame.ImageColor3 = Color3.fromRGB(10,10,10)
 	DisplayFrame.Size = UDim2.new(1,-115,0,235)
 	DisplayFrame.Position = UDim2.new(0,110,0,30)
 	DisplayFrame.Parent = MainFrame
