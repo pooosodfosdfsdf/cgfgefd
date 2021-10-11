@@ -412,7 +412,7 @@ function UILibrary.Load(GUITitle)
 			
 			HiddenButton.MouseButton1Down:Connect(function()
 				Callback()
-				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(25,25,25)})
+				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(20,20,20)})
 				Tween(HiddenButton, {TextTransparency = 0.5})
 				wait(TweenTime)
 				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(15,15,15)})
