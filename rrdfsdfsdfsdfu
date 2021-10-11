@@ -301,7 +301,7 @@ function UILibrary.Load(GUITitle)
 		
 		local PageContainer = RoundBox(5)
 		PageContainer.Name = PageTitle
-		PageContainer.Size = UDim2.new(0.9,0,0,20)
+		PageContainer.Size = UDim2.new(1,0,0,20)
 		PageContainer.LayoutOrder = TabCount
 		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(50,50,50) or Color3.fromRGB(40,40,40)
 		PageContainer.Parent = MenuBar
@@ -353,7 +353,7 @@ function UILibrary.Load(GUITitle)
 		local DisplayPadding = Instance.new("UIPadding")
 		DisplayPadding.PaddingBottom = UDim.new(0,5)
 		DisplayPadding.PaddingTop = UDim.new(0,5)
-		DisplayPadding.PaddingLeft = UDim.new(0,1)
+		DisplayPadding.PaddingLeft = UDim.new(0,5)
 		DisplayPadding.PaddingRight = UDim.new(0,5)
 		DisplayPadding.Parent = DisplayPage
 		
