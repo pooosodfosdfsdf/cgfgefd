@@ -301,7 +301,7 @@ function UILibrary.Load(GUITitle)
 		
 		local PageContainer = RoundBox(5)
 		PageContainer.Name = PageTitle
-		PageContainer.Size = UDim2.new(1,0,0,20)
+		PageContainer.Size = UDim2.new(0.9,0,0,20)
 		PageContainer.LayoutOrder = TabCount
 		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(50,50,50) or Color3.fromRGB(40,40,40)
 		PageContainer.Parent = MenuBar
