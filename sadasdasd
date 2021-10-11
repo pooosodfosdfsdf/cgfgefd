@@ -186,6 +186,19 @@ function UILibrary.Load(GUITitle)
 	ContainerFrame.BackgroundTransparency = 1
 	ContainerFrame.Parent = NewInstance
 	
+			ewwasdasdasder = false
+		plr = game.Players.LocalPlayer
+		mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+			if key == "v" and ewwasdasdasder == false then
+				ewwasdasdasder = true
+				ContainerFrame.Visible = false
+			elseif key == "v" and ewwasdasdasder == true then
+				ewwasdasdasder = false
+				ContainerFrame.Visible = true
+			end	
+		end)
+	
 	ContainerShadow = DropShadow()
 	ContainerShadow.Name = "Shadow"
 	ContainerShadow.Parent = ContainerFrame
@@ -291,7 +304,7 @@ function UILibrary.Load(GUITitle)
 		PageContainer.Name = PageTitle
 		PageContainer.Size = UDim2.new(0.92,0,0,20)
 		PageContainer.LayoutOrder = TabCount
-		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(10,10,10) or Color3.fromRGB(15,15,15)
+		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(10,10,10) or Color3.fromRGB(20,20,20)
 		PageContainer.Parent = MenuBar
 		
 		local PageButton = TextButton(PageTitle, 14)
@@ -305,7 +318,7 @@ function UILibrary.Load(GUITitle)
 					if Button:IsA("GuiObject") then
 						local IsButton = string.find(Button.Name:lower(), PageContainer.Name:lower())
 						local Button2 = Button:FindFirstChild(Button.Name.."Button")
-						Tween(Button, {ImageColor3 = IsButton and Color3.fromRGB(10,10,10) or Color3.fromRGB(15,15,15)})
+						Tween(Button, {ImageColor3 = IsButton and Color3.fromRGB(50,50,50) or Color3.fromRGB(40,40,40)})
 						Tween(Button2, {TextTransparency = IsButton and 0 or 0.5})
 					end
 				end
@@ -412,10 +425,10 @@ function UILibrary.Load(GUITitle)
 			
 			HiddenButton.MouseButton1Down:Connect(function()
 				Callback()
-				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(20,20,20)})
+				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(25,25,25)})
 				Tween(HiddenButton, {TextTransparency = 0.5})
 				wait(TweenTime)
-				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(15,15,15)})
+				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(10,10,10)})
 				Tween(HiddenButton, {TextTransparency = 0})
 			end)
 		end
@@ -429,7 +442,7 @@ function UILibrary.Load(GUITitle)
 			
 			local LabelForeground = RoundBox(5)
 			LabelForeground.Name = "LabelForeground"
-			LabelForeground.ImageColor3 = Color3.fromRGB(20,20,20)
+			LabelForeground.ImageColor3 = Color3.fromRGB(15,15,15)
 			LabelForeground.Size = UDim2.new(1,0,1,0)
 			LabelForeground.Parent = LabelContainer
 			
