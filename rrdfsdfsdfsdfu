@@ -14,12 +14,12 @@ local GlobalTweenInfo = TweenInfo.new(TweenTime)
 local AlteredTweenInfo = TweenInfo.new(TweenTime, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
 
 local DropShadowID = "rbxassetid://297774371"
-local DropShadowTransparency = 0.6
+local DropShadowTransparency = 0.4
 
 local IconLibraryID = "rbxassetid://3926305904"
 local IconLibraryID2 = "rbxassetid://3926307971"
 
-local MainFont = Enum.Font.Gotham
+local MainFont = Enum.Font.SourceSansBold
 
 local function GetXY(GuiObject)
 	local X, Y = Mouse.X - GuiObject.AbsolutePosition.X, Mouse.Y - GuiObject.AbsolutePosition.Y
@@ -185,20 +185,6 @@ function UILibrary.Load(GUITitle)
 	ContainerFrame.Position = UDim2.new(0.5,-250,0.5,-150)
 	ContainerFrame.BackgroundTransparency = 1
 	ContainerFrame.Parent = NewInstance
-
-    
-		closed = false
-		plr = game.Players.LocalPlayer
-		mouse = plr:GetMouse()
-		mouse.KeyDown:connect(function(key)
-			if key == "v" and closed == false then
-				closed = true
-				ContainerFrame.Visible = false
-			elseif key == "v" and closed == true then
-				closed = false
-				ContainerFrame.Visible = true
-			end	
-		end)
 	
 	ContainerShadow = DropShadow()
 	ContainerShadow.Name = "Shadow"
@@ -211,7 +197,7 @@ function UILibrary.Load(GUITitle)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Size = UDim2.new(1,-50,1,-30)
 	MainFrame.Position = UDim2.new(0,25,0,15)
-	MainFrame.ImageColor3 = Color3.fromRGB(20,20,20)
+	MainFrame.ImageColor3 = Color3.fromRGB(25,25,25)
 	MainFrame.Parent = ContainerFrame
 	
 	local MenuBar, DisplayFrame, TitleBar
@@ -219,7 +205,7 @@ function UILibrary.Load(GUITitle)
 	MenuBar = ScrollingFrame()
 	MenuBar.Name = "MenuBar"
 	MenuBar.BackgroundTransparency = 0.7
-	MenuBar.BackgroundColor3 = Color3.fromRGB(0,0,0)
+	MenuBar.BackgroundColor3 = Color3.fromRGB(15,15,15)
 	MenuBar.Size = UDim2.new(0,100,0,235)
 	MenuBar.Position = UDim2.new(0,5,0,30)
 	MenuBar.CanvasSize = UDim2.new(0,0,0,0)
@@ -234,7 +220,7 @@ function UILibrary.Load(GUITitle)
 	
 	TitleBar = RoundBox(5)
 	TitleBar.Name = "TitleBar"
-	TitleBar.ImageColor3 = Color3.fromRGB(50,50,50)
+	TitleBar.ImageColor3 = Color3.fromRGB(15,15,15)
 	TitleBar.Size = UDim2.new(1,-10,0,20)
 	TitleBar.Position = UDim2.new(0,5,0,5)
 	TitleBar.Parent = MainFrame
@@ -290,7 +276,9 @@ function UILibrary.Load(GUITitle)
 	MenuListLayout = Instance.new("UIListLayout")
 	MenuListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 	MenuListLayout.Padding = UDim.new(0,5)
+	MenuListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center	
 	MenuListLayout.Parent = MenuBar
+	
 	
 	local TabCount = 0
 	
@@ -301,9 +289,9 @@ function UILibrary.Load(GUITitle)
 		
 		local PageContainer = RoundBox(5)
 		PageContainer.Name = PageTitle
-		PageContainer.Size = UDim2.new(1,0,0,20)
+		PageContainer.Size = UDim2.new(0.92,0,0,20)
 		PageContainer.LayoutOrder = TabCount
-		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(50,50,50) or Color3.fromRGB(40,40,40)
+		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(10,10,10) or Color3.fromRGB(15,15,15)
 		PageContainer.Parent = MenuBar
 		
 		local PageButton = TextButton(PageTitle, 14)
@@ -341,9 +329,10 @@ function UILibrary.Load(GUITitle)
 		
 		local DisplayList = Instance.new("UIListLayout")
 		DisplayList.SortOrder = Enum.SortOrder.LayoutOrder
+		DisplayList.HorizontalAlignment = Enum.HorizontalAlignment.Center
 		DisplayList.Padding = UDim.new(0,5)
 		DisplayList.Parent = DisplayPage
-		
+
 		DisplayList:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
 			local Y1 = DisplayList.AbsoluteContentSize.Y
 			local Y2 = DisplayPage.AbsoluteWindowSize.Y
@@ -360,7 +349,7 @@ function UILibrary.Load(GUITitle)
 		if SearchBarIncluded then
 			local SearchBarContainer = RoundBox(5)
 			SearchBarContainer.Name = "SearchBar"
-			SearchBarContainer.ImageColor3 = Color3.fromRGB(35,35,35)
+			SearchBarContainer.ImageColor3 = Color3.fromRGB(15,15,15)
 			SearchBarContainer.Size = UDim2.new(1,0,0,20)
 			SearchBarContainer.Parent = DisplayPage
 			
@@ -368,7 +357,7 @@ function UILibrary.Load(GUITitle)
 			SearchBox.Name = "SearchInput"
 			SearchBox.Position = UDim2.new(0,20,0,0)
 			SearchBox.Size = UDim2.new(1,-20,1,0)
-			SearchBox.TextTransparency = 0.5
+			SearchBox.TextTransparency = 0.4
 			SearchBox.TextXAlignment = Enum.TextXAlignment.Left
 			SearchBox.Parent = SearchBarContainer
 			
@@ -391,7 +380,7 @@ function UILibrary.Load(GUITitle)
 				end
 			end)
 		end
-		
+
 		local PageLibrary = {}
 		
 		function PageLibrary.AddButton(Text, Callback, Parent, Underline)
@@ -404,7 +393,7 @@ function UILibrary.Load(GUITitle)
 			local ButtonForeground = RoundBox(5)
 			ButtonForeground.Name = "ButtonForeground"
 			ButtonForeground.Size = UDim2.new(1,0,1,0)
-			ButtonForeground.ImageColor3 = Color3.fromRGB(35,35,35)
+			ButtonForeground.ImageColor3 = Color3.fromRGB(15,15,15)
 			ButtonForeground.Parent = ButtonContainer
 			
 			if Underline then
@@ -423,10 +412,10 @@ function UILibrary.Load(GUITitle)
 			
 			HiddenButton.MouseButton1Down:Connect(function()
 				Callback()
-				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(45,45,45)})
+				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(20,20,20)})
 				Tween(HiddenButton, {TextTransparency = 0.5})
 				wait(TweenTime)
-				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(35,35,35)})
+				Tween(ButtonForeground, {ImageColor3 = Color3.fromRGB(15,15,15)})
 				Tween(HiddenButton, {TextTransparency = 0})
 			end)
 		end
@@ -440,7 +429,7 @@ function UILibrary.Load(GUITitle)
 			
 			local LabelForeground = RoundBox(5)
 			LabelForeground.Name = "LabelForeground"
-			LabelForeground.ImageColor3 = Color3.fromRGB(45,45,45)
+			LabelForeground.ImageColor3 = Color3.fromRGB(20,20,20)
 			LabelForeground.Size = UDim2.new(1,0,1,0)
 			LabelForeground.Parent = LabelContainer
 			
@@ -614,7 +603,7 @@ function UILibrary.Load(GUITitle)
 			
 			local SliderForeground = RoundBox(5)
 			SliderForeground.Name = "SliderForeground"
-			SliderForeground.ImageColor3 = Color3.fromRGB(35,35,35)
+			SliderForeground.ImageColor3 = Color3.fromRGB(15,15,15)
 			SliderForeground.Size = UDim2.new(1,0,1,0)
 			SliderForeground.Parent = SliderContainer
 			
@@ -625,9 +614,9 @@ function UILibrary.Load(GUITitle)
 			
 			local SliderFill = RoundBox(5)
 			SliderFill.Size = UDim2.new(DefaultScale,0,1,0)
-			SliderFill.ImageColor3 = Color3.fromRGB(70,70,70)
+			SliderFill.ImageColor3 = Color3.fromRGB(25,25,25)
 			SliderFill.ZIndex = 5
-			SliderFill.ImageTransparency = 0.7
+			SliderFill.ImageTransparency = 0.6
 			SliderFill.Parent = SliderButton
 			
 			SliderButton.MouseButton1Down:Connect(function()
@@ -671,24 +660,24 @@ function UILibrary.Load(GUITitle)
 			local FlatLeft, FlatRight = Frame(), Frame()
 			
 			ToggleLeftSide.Size = UDim2.new(1,-22,1,0)
-			ToggleLeftSide.ImageColor3 = Color3.fromRGB(35,35,35)
+			ToggleLeftSide.ImageColor3 = Color3.fromRGB(15,15,15)
 			ToggleLeftSide.Parent = ToggleContainer
 			
 			ToggleRightSide.Position = UDim2.new(1,-20,0,0)
 			ToggleRightSide.Size = UDim2.new(0,20,1,0)
-			ToggleRightSide.ImageColor3 = Color3.fromRGB(45,45,45)
+			ToggleRightSide.ImageColor3 = Color3.fromRGB(25,25,25)
 			ToggleRightSide.Parent = ToggleContainer
 			
-			FlatLeft.BackgroundColor3 = Color3.fromRGB(35,35,35)
+			FlatLeft.BackgroundColor3 = Color3.fromRGB(15,15,15)
 			FlatLeft.Size = UDim2.new(0,5,1,0)
 			FlatLeft.Position = UDim2.new(1,-5,0,0)
 			FlatLeft.Parent = ToggleLeftSide
 			
-			FlatRight.BackgroundColor3 = Color3.fromRGB(45,45,45)
+			FlatRight.BackgroundColor3 = Color3.fromRGB(25,25,25)
 			FlatRight.Size = UDim2.new(0,5,1,0)
 			FlatRight.Parent = ToggleRightSide
 			
-			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,100) or Color3.fromRGB(255,100,100)
+			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,70) or Color3.fromRGB(255,100,100)
 			EffectFrame.Position = UDim2.new(1,-22,0.2,0)
 			EffectFrame.Size = UDim2.new(0,2,0.6,0)
 			EffectFrame.Parent = ToggleContainer
@@ -703,7 +692,7 @@ function UILibrary.Load(GUITitle)
 			
 			ToggleButton.MouseButton1Down:Connect(function()
 				ThisToggle = not ThisToggle
-				Tween(EffectFrame, {BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,100) or Color3.fromRGB(255,100,100)})
+				Tween(EffectFrame, {BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,70) or Color3.fromRGB(255,100,100)})
 				Tween(RightTick, {ImageTransparency = ThisToggle and 0 or 1})
 				Callback(ThisToggle)
 			end)	
