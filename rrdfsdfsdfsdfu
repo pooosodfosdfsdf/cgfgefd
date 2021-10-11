@@ -289,7 +289,7 @@ function UILibrary.Load(GUITitle)
 	
 	MenuListLayout = Instance.new("UIListLayout")
 	MenuListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	MenuListLayout.Padding = UDim.new(1,5)
+	MenuListLayout.Padding = UDim.new(0,5)
 	MenuListLayout.Parent = MenuBar
 	
 	local TabCount = 0
@@ -353,7 +353,7 @@ function UILibrary.Load(GUITitle)
 		local DisplayPadding = Instance.new("UIPadding")
 		DisplayPadding.PaddingBottom = UDim.new(0,5)
 		DisplayPadding.PaddingTop = UDim.new(0,5)
-		DisplayPadding.PaddingLeft = UDim.new(0,5)
+		DisplayPadding.PaddingLeft = UDim.new(0,1)
 		DisplayPadding.PaddingRight = UDim.new(0,5)
 		DisplayPadding.Parent = DisplayPage
 		
