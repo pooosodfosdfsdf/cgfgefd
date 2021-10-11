@@ -113,8 +113,8 @@ end
 local function ScrollingFrame()
 	local NewScrollingFrame = Instance.new("ScrollingFrame")
 	NewScrollingFrame.BackgroundTransparency = 1
-	NewScrollingFrame.BorderSizePixel = 0
-	NewScrollingFrame.ScrollBarThickness = 0
+	NewScrollingFrame.BorderSizePixel = 
+	NewScrollingFrame.ScrollBarThickness = 1
 	NewScrollingFrame.ZIndex = Level
 	return NewScrollingFrame
 end
@@ -234,7 +234,7 @@ function UILibrary.Load(GUITitle)
 	
 	TitleBar = RoundBox(5)
 	TitleBar.Name = "TitleBar"
-	TitleBar.ImageColor3 = Color3.fromRGB(40,40,40)
+	TitleBar.ImageColor3 = Color3.fromRGB(50,50,50)
 	TitleBar.Size = UDim2.new(1,-10,0,20)
 	TitleBar.Position = UDim2.new(0,5,0,5)
 	TitleBar.Parent = MainFrame
