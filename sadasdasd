@@ -185,20 +185,6 @@ function UILibrary.Load(GUITitle)
 	ContainerFrame.Position = UDim2.new(0.5,-250,0.5,-150)
 	ContainerFrame.BackgroundTransparency = 1
 	ContainerFrame.Parent = NewInstance
-
-	clsedded = false
-	plr = game.Players.LocalPlayer
-	mouse = plr:GetMouse()
-	mouse.KeyDown:connect(function(key)
-		if key == "v" and clsedded == false then
-			clsedded = true
-			ContainerFrame.Visible = false
-		elseif key == "v" and clsedded == true then
-			clsedded = false
-			ContainerFrame.Visible = true
-		end	
-	end)
-
 	
 	ContainerShadow = DropShadow()
 	ContainerShadow.Name = "Shadow"
@@ -219,7 +205,7 @@ function UILibrary.Load(GUITitle)
 	MenuBar = ScrollingFrame()
 	MenuBar.Name = "MenuBar"
 	MenuBar.BackgroundTransparency = 0.7
-	MenuBar.BackgroundColor3 = Color3.fromRGB(20,20,20)
+	MenuBar.BackgroundColor3 = Color3.fromRGB(15,15,15)
 	MenuBar.Size = UDim2.new(0,100,0,235)
 	MenuBar.Position = UDim2.new(0,5,0,30)
 	MenuBar.CanvasSize = UDim2.new(0,0,0,0)
@@ -227,14 +213,14 @@ function UILibrary.Load(GUITitle)
 	
 	DisplayFrame = RoundBox(5)
 	DisplayFrame.Name = "Display"
-	DisplayFrame.ImageColor3 = Color3.fromRGB(20,20,20)
+	DisplayFrame.ImageColor3 = Color3.fromRGB(10,10,10)
 	DisplayFrame.Size = UDim2.new(1,-115,0,235)
 	DisplayFrame.Position = UDim2.new(0,110,0,30)
 	DisplayFrame.Parent = MainFrame
 	
 	TitleBar = RoundBox(5)
 	TitleBar.Name = "TitleBar"
-	TitleBar.ImageColor3 = Color3.fromRGB(20,20,20)
+	TitleBar.ImageColor3 = Color3.fromRGB(15,15,15)
 	TitleBar.Size = UDim2.new(1,-10,0,20)
 	TitleBar.Position = UDim2.new(0,5,0,5)
 	TitleBar.Parent = MainFrame
@@ -305,7 +291,7 @@ function UILibrary.Load(GUITitle)
 		PageContainer.Name = PageTitle
 		PageContainer.Size = UDim2.new(0.92,0,0,20)
 		PageContainer.LayoutOrder = TabCount
-		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(15,15,15) or Color3.fromRGB(5,5,5)
+		PageContainer.ImageColor3 = (TabCount == 0) and Color3.fromRGB(50,50,50) or Color3.fromRGB(40,40,40)
 		PageContainer.Parent = MenuBar
 		
 		local PageButton = TextButton(PageTitle, 14)
@@ -363,11 +349,11 @@ function UILibrary.Load(GUITitle)
 		if SearchBarIncluded then
 			local SearchBarContainer = RoundBox(5)
 			SearchBarContainer.Name = "SearchBar"
-			SearchBarContainer.ImageColor3 = Color3.fromRGB(10,10,10)
+			SearchBarContainer.ImageColor3 = Color3.fromRGB(35,35,35)
 			SearchBarContainer.Size = UDim2.new(1,0,0,20)
 			SearchBarContainer.Parent = DisplayPage
 			
-			local SearchBox = TextBox("Search...")
+			local SearchBox = TextBox(" ")
 			SearchBox.Name = "SearchInput"
 			SearchBox.Position = UDim2.new(0,20,0,0)
 			SearchBox.Size = UDim2.new(1,-20,1,0)
@@ -407,7 +393,7 @@ function UILibrary.Load(GUITitle)
 			local ButtonForeground = RoundBox(5)
 			ButtonForeground.Name = "ButtonForeground"
 			ButtonForeground.Size = UDim2.new(1,0,1,0)
-			ButtonForeground.ImageColor3 = Color3.fromRGB(15,15,15)
+			ButtonForeground.ImageColor3 = Color3.fromRGB(35,35,35)
 			ButtonForeground.Parent = ButtonContainer
 			
 			if Underline then
@@ -443,7 +429,7 @@ function UILibrary.Load(GUITitle)
 			
 			local LabelForeground = RoundBox(5)
 			LabelForeground.Name = "LabelForeground"
-			LabelForeground.ImageColor3 = Color3.fromRGB(20,20,20)
+			LabelForeground.ImageColor3 = Color3.fromRGB(45,45,45)
 			LabelForeground.Size = UDim2.new(1,0,1,0)
 			LabelForeground.Parent = LabelContainer
 			
@@ -617,7 +603,7 @@ function UILibrary.Load(GUITitle)
 			
 			local SliderForeground = RoundBox(5)
 			SliderForeground.Name = "SliderForeground"
-			SliderForeground.ImageColor3 = Color3.fromRGB(35,35,35)
+			SliderForeground.ImageColor3 = Color3.fromRGB(10,10,10)
 			SliderForeground.Size = UDim2.new(1,0,1,0)
 			SliderForeground.Parent = SliderContainer
 			
@@ -628,9 +614,9 @@ function UILibrary.Load(GUITitle)
 			
 			local SliderFill = RoundBox(5)
 			SliderFill.Size = UDim2.new(DefaultScale,0,1,0)
-			SliderFill.ImageColor3 = Color3.fromRGB(80,80,80)
+			SliderFill.ImageColor3 = Color3.fromRGB(20,20,20)
 			SliderFill.ZIndex = 5
-			SliderFill.ImageTransparency = 0.7
+			SliderFill.ImageTransparency = 0.6
 			SliderFill.Parent = SliderButton
 			
 			SliderButton.MouseButton1Down:Connect(function()
@@ -674,24 +660,24 @@ function UILibrary.Load(GUITitle)
 			local FlatLeft, FlatRight = Frame(), Frame()
 			
 			ToggleLeftSide.Size = UDim2.new(1,-22,1,0)
-			ToggleLeftSide.ImageColor3 = Color3.fromRGB(20,20,20)
+			ToggleLeftSide.ImageColor3 = Color3.fromRGB(25,25,25)
 			ToggleLeftSide.Parent = ToggleContainer
 			
 			ToggleRightSide.Position = UDim2.new(1,-20,0,0)
 			ToggleRightSide.Size = UDim2.new(0,20,1,0)
-			ToggleRightSide.ImageColor3 = Color3.fromRGB(20,20,20)
+			ToggleRightSide.ImageColor3 = Color3.fromRGB(35,35,35)
 			ToggleRightSide.Parent = ToggleContainer
 			
-			FlatLeft.BackgroundColor3 = Color3.fromRGB(35,35,35)
+			FlatLeft.BackgroundColor3 = Color3.fromRGB(25,25,25)
 			FlatLeft.Size = UDim2.new(0,5,1,0)
 			FlatLeft.Position = UDim2.new(1,-5,0,0)
 			FlatLeft.Parent = ToggleLeftSide
 			
-			FlatRight.BackgroundColor3 = Color3.fromRGB(45,45,45)
+			FlatRight.BackgroundColor3 = Color3.fromRGB(35,35,35)
 			FlatRight.Size = UDim2.new(0,5,1,0)
 			FlatRight.Parent = ToggleRightSide
 			
-			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,109) or Color3.fromRGB(255,160,160)
+			EffectFrame.BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,70) or Color3.fromRGB(255,100,100)
 			EffectFrame.Position = UDim2.new(1,-22,0.2,0)
 			EffectFrame.Size = UDim2.new(0,2,0.6,0)
 			EffectFrame.Parent = ToggleContainer
@@ -706,7 +692,7 @@ function UILibrary.Load(GUITitle)
 			
 			ToggleButton.MouseButton1Down:Connect(function()
 				ThisToggle = not ThisToggle
-				Tween(EffectFrame, {BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,50) or Color3.fromRGB(255,100,100)})
+				Tween(EffectFrame, {BackgroundColor3 = ThisToggle and Color3.fromRGB(0,255,70) or Color3.fromRGB(255,100,100)})
 				Tween(RightTick, {ImageTransparency = ThisToggle and 0 or 1})
 				Callback(ThisToggle)
 			end)	
