@@ -186,6 +186,20 @@ function UILibrary.Load(GUITitle)
 	ContainerFrame.BackgroundTransparency = 1
 	ContainerFrame.Parent = NewInstance
 	
+			asdasdasd = false
+		pasdlasldaldlasd = game.Players.LocalPlayer
+		asdasdqeqweqwewerwer = pasdlasldaldlasd:GetMouse()
+		asdasdqeqweqwewerwer.KeyDown:connect(function(saasdasd)
+			if saasdasd == "v" and asdasdasd == false then
+				asdasdasd = true
+				ContainerFrame.Visible = false
+			elseif saasdasd == "v" and saasdasd == true then
+				asdasdasd = false
+				ContainerFrame.Visible = true
+			end	
+		end)
+
+	
 	ContainerShadow = DropShadow()
 	ContainerShadow.Name = "Shadow"
 	ContainerShadow.Parent = ContainerFrame
