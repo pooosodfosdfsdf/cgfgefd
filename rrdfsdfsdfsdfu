@@ -289,7 +289,7 @@ function UILibrary.Load(GUITitle)
 	
 	MenuListLayout = Instance.new("UIListLayout")
 	MenuListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	MenuListLayout.Padding = UDim.new(0.1,5)
+	MenuListLayout.Padding = UDim.new(1,5)
 	MenuListLayout.Parent = MenuBar
 	
 	local TabCount = 0
