@@ -14,7 +14,7 @@ local GlobalTweenInfo = TweenInfo.new(TweenTime)
 local AlteredTweenInfo = TweenInfo.new(TweenTime, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
 
 local DropShadowID = "rbxassetid://297774371"
-local DropShadowTransparency = 0.2
+local DropShadowTransparency = 0.5
 
 local IconLibraryID = "rbxassetid://3926305904"
 local IconLibraryID2 = "rbxassetid://3926307971"
@@ -441,7 +441,7 @@ function UILibrary.Load(GUITitle)
 			
 			local LabelForeground = RoundBox(5)
 			LabelForeground.Name = "LabelForeground"
-			LabelForeground.ImageColor3 = Color3.fromRGB(20,20,20)
+			LabelForeground.ImageColor3 = Color3.fromRGB(23,23,23)
 			LabelForeground.Size = UDim2.new(1,0,1,0)
 			LabelForeground.Parent = LabelContainer
 			
@@ -462,7 +462,7 @@ function UILibrary.Load(GUITitle)
 			
 			local DropdownForeground = RoundBox(5)
 			DropdownForeground.ClipsDescendants = true
-			DropdownForeground.ImageColor3 = Color3.fromRGB(15,15,15)
+			DropdownForeground.ImageColor3 = Color3.fromRGB(35,35,35)
 			DropdownForeground.Size = UDim2.new(1,0,1,0)
 			DropdownForeground.Parent = DropdownContainer
 			
@@ -527,7 +527,7 @@ function UILibrary.Load(GUITitle)
 			local PickerLeftSide, PickerRightSide, PickerFrame = RoundBox(5), RoundBox(5), RoundBox(5)
 			
 			PickerLeftSide.Size = UDim2.new(1,-22,1,0)
-			PickerLeftSide.ImageColor3 = Color3.fromRGB(17,17,17)
+			PickerLeftSide.ImageColor3 = Color3.fromRGB(15,15,15)
 			PickerLeftSide.Parent = PickerContainer
 			
 			PickerRightSide.Size = UDim2.new(0,20,1,0)
@@ -535,7 +535,7 @@ function UILibrary.Load(GUITitle)
 			PickerRightSide.ImageColor3 = DefaultColour
 			PickerRightSide.Parent = PickerContainer
 			
-			PickerFrame.ImageColor3 = Color3.fromRGB(20,20,20)
+			PickerFrame.ImageColor3 = Color3.fromRGB(25,25,25)
 			PickerFrame.Size = UDim2.new(1,-22,0,60)
 			PickerFrame.Position = UDim2.new(0,0,0,20)
 			PickerFrame.Parent = PickerContainer
@@ -561,7 +561,7 @@ function UILibrary.Load(GUITitle)
 			
 			local EffectLeft, EffectRight = Frame(), Frame()
 			
-			EffectLeft.BackgroundColor3 = Color3.fromRGB(35,35,35)
+			EffectLeft.BackgroundColor3 = Color3.fromRGB(20,20,20)
 			EffectLeft.Position = UDim2.new(1,-5,0,0)
 			EffectLeft.Size = UDim2.new(0,5,1,0)
 			EffectLeft.Parent = PickerLeftSide
