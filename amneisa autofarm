@@ -48,6 +48,7 @@ end
 
 shared.MoneyFarm = true -- Just execute shared.MoneyFarm = false to stop farming
 
+print("Amneisa AutoFarm")
 while shared.MoneyFarm do
     wait()
     local Target = gettarget()
